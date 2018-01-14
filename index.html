@@ -1,61 +1,379 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="ANSI"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
-  </head>
 
-  <body>
-    <div class="nav">
-        <ul>
-          <li style="float:left"><a class="third after" href="#">Home</a></li>
-          <li style="float:left"><a class="third after" href="#">About</a></li>
-          <li style="float:left"><a class="third after" href="#">Portfolio</a></li>
-          <li style="float:left"><a class="third after" href="#">Sketchbook</a></li>
-        </ul>
-    </div>
+	<head>
 
-    <div class="jumbotron">
-    </div> 
-    
-    <div class="learn-more">
-          <div class="header">
-            <p>CURRENT PROJECTS</p>
-          </div>
-          <div class="paragraph">
-            <p>From the Ghastly Eyrie I can see to the ends of the world, and from this vantage point I declare with utter certainty that this one is in the bag! Even on this fallen field, I dedicate my powers to the lofty Skywrath.</p>
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	    <meta name="description" content="">
+	    <meta name="author" content="">
+
+	    <title>Marcus L.H.</title>
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="C:\Users\Marcu\Pictures\favicon\favicon.ico" type="image/x-icon" />
+	    <!-- Custom styles for this template -->
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+	</head>
+    <body>
+        <div class="topnav" id="myTopnav">
+            <a data-toggle="tab" href="#Home" class="brand">HOME</a>
+            <a data-toggle="tab" href="#Sketches">SKETCHES</a>
+            <a data-toggle="tab" href="#Projects">PROJECTS</a>
+            <a data-toggle="tab" href="#Contact">CONTACT</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+		    <div id="wrapper">
+                <!-- Sidebar -->
+                <div id="sidebar-wrapper">
+                    <ul class="sidebar-nav">
+                        <div class="portrait">
+                            <div class="item">
+                                <a data-toggle="tab" href="#Home">
+                                    <img src="C:\Users\Marcu\Pictures\sage.jpg" class="main">
+                                    <div class="sidebarlogo">
+                                        <img src="C:\Users\marcu\Pictures\logocolorring.png">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+			                <li class="sidebar-brand">
+			                    <h1>
+			                        MARCUS L.H.
+			                    </h1>
+			                </li>
+			                <li class="active">
+			                    <a data-toggle="tab" href="#Home">HOME</a>
+			                </li>
+			                <li>
+			                    <a data-toggle="tab" href="#Sketches">SKETCHES</a>
+			                </li>
+			                <li>
+			                    <a data-toggle="tab" href="#Projects">PROJECTS</a>
+			                </li>
+			                <li>
+			                    <a data-toggle="tab" href="#Contact">CONTACT</a>
+			                </li>
+                    </ul>
+                </div>
+			        <!-- /#sidebar-wrapper -->
+
+			    <!-- Page Content -->
+			    <div id="page-content-wrapper">
+			        <div class="tab-content">
+			            <div>
+                            <button class="toggle" id="menu-toggle"><i style="font-size:24px" class="fa">&#xf100;</i></button>
+                        </div>
+			            <div id="Home" class="tab-pane fade in active">
+                            <div class="jumbotron-container" id="jumbotron-container">
+                                <img src="https://static.fjcdn.com/large/pictures/6a/21/6a21f2_5085393.jpg" class="home-jumbotron">
+                                <div class="subimage">
+                                    <img src="C:\Users\marcu\Pictures\logolight.png">
+                                </div>
+			                    <div class="caption">
+			                        <h1>[ PLAY TO <span style="color:#ff3333">WIN</span> ]</h1>
+                                </div>
+                                <div class="subcaption">
+                                    <h2>M.L.H</h2>
+			                    </div>
+			                    <div id="scrolldown">
+			                        <a href="#home-body"><span></span></a>
+			                    </div>
+                            </div>
+                            <div class="home-body" id="home-body">
+                                <div class="text-container">
+			                        <!--<h2>CLAIM THE<br><span style="color:#ff3333">AEGIS</span></h2>-->
+                                    <div class="home-text-header">
+                                        <div class="test">
+                                            <h1>Hello!</h1>
+                                        </div>
+                                    </div>
+                                    <div class="home-text">
+                                        <div class="test">
+                                        <p>I'm a 2nd year student currently studying systems design engineering at the University of Waterloo with a passion for visual arts and design. My goal has always been to develop and apply what I know about visual arts and human factors towards any kind of design objectives.<br><br>This website is a personal project of mine, the main purpose of which is to develop apply knowledge of web-development as well as provide a location to archive sketches and other projects. Thank you for stopping by; I hope I can show you something worth seeing.</p>
+                                        </div>
+                                    </div>
+                                    <div class="aboutlink">
+                                        <div class="test">
+                                            <a href="C:\Users\marcu\Documents\Resume 2018\Resume.pdf"
+                                               target="_blank">VIEW RESUME</a>
+                                        </div>
+                                    </div>
+			                    </div>
+                                <div class="test">
+                                    <div class="image-container">
+                                        <img src="C:\Users\marcu\Pictures\elephantvector.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+			            <div id="Sketches" class="tab-pane fade">
+			                <div class="tab-jumbotron" id="tab-jumbotron">
+			                    <img src="http://www.artofmtg.com/wp-content/uploads/2014/02/Archetype-of-Endurance-Art.jpg">
+			                    <div class="caption">
+			                        <h1><span style="color:#ff3333">[</span> SKETCHES <span style="color:#ff3333">]</span></h1>
+			                    </div>
+			                </div>
+			                <div class="sketchcontainer" id="container">
+			                    <div class="row" id="sketchImages">
+			                                <!-- Image gallery -->
+			                        <div class="column">
+                                        <img onclick="openModal();currentSlide(1)" src="http://www.artofmtg.com/wp-content/uploads/2016/04/Drogskol-Cavalry-Promo-Shadows-over-Innistrad-Art.jpg" style="width:100%" alt="Drogskol Cavalry, 12/10/17" class="galleryimg">
+                                        <img src="https://s-media-cache-ak0.pinimg.com/originals/a1/63/39/a16339b967222c38ea1f1964355f8908.jpg" style="width:100%" class="galleryimg">
+                                        <img src="https://i.pinimg.com/736x/4e/e4/e3/4ee4e3e79b31d1dd70f4fb306642cf32--mtg-art-fantasy-inspiration.jpg" style="width:100%" class="galleryimg">
+                                    </div>
+			                        <div class="column">
+                                        <img onclick="openModal();currentSlide(2)" src="http://www.jonfoster.com/uploads/5/3/0/8/5308969/s548873292807741186_p56_i1_w1008.jpeg" style="width:100%" alt="Time Skip, 09/08/17" class="galleryimg">
+                                        <img src="https://i.pinimg.com/736x/2a/c7/bb/2ac7bb7b885d5e7456a24877b3b2b4a1--creature-fantasy-fantasy-creatures.jpg" style="width:100%" class="galleryimg">
+                                        <img src="https://s-media-cache-ak0.pinimg.com/originals/4a/bd/e6/4abde6d71538d1ca4b4d0922cea9badd.jpg" style="width:100%" class="galleryimg">
+                                    </div>
+			                        <div class="column">
+                                        <img onclick="openModal();currentSlide(3)" src="https://i.pinimg.com/736x/4e/e4/e3/4ee4e3e79b31d1dd70f4fb306642cf32--mtg-art-fantasy-inspiration.jpg" style="width:100%" alt="lightning strike, 22/12/17" class="galleryimg">
+                                        <img src="http://www.artofmtg.com/wp-content/uploads/2016/04/Drogskol-Cavalry-Promo-Shadows-over-Innistrad-Art.jpg" style="width:100%" class="galleryimg">
+                                        <img src="http://www.jonfoster.com/uploads/5/3/0/8/5308969/s548873292807741186_p56_i1_w1008.jpeg" style="width:100%" class="galleryimg">
+                                    </div>
+			                    </div>
+			                    <!-- The Modal/Lightbox -->
+			                    <div id="myModal" class="modal">
+			                        <span class="closemodal" onclick="closeModal()">&times;</span>
+			                        <div class="modal-content">
+			                            <div class="mySlides">
+			                                <img src="http://www.artofmtg.com/wp-content/uploads/2016/04/Drogskol-Cavalry-Promo-Shadows-over-Innistrad-Art.jpg" style="width:100%">
+			                            </div>
+
+			                            <div class="mySlides">
+			                                <img src="http://www.jonfoster.com/uploads/5/3/0/8/5308969/s548873292807741186_p56_i1_w1008.jpeg" style="width:100%">
+			                            </div>
+
+			                            <div class="mySlides">
+			                                <img src="https://i.pinimg.com/736x/4e/e4/e3/4ee4e3e79b31d1dd70f4fb306642cf32--mtg-art-fantasy-inspiration.jpg" style="width:100%">
+			                            </div>
+
+			                            <!-- Next/previous controls -->
+			                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+			                            <!-- Caption text -->
+			                            <div class="caption-container">
+			                                <p id="caption"></p>
+			                            </div>
+			                        </div>
+			                    </div>
+							</div>
+			            </div>
+			            <div id="Projects" class="tab-pane fade">
+                            <div class="tab-jumbotron" id="tab-jumbotron">
+                                <img src="http://www.artofmtg.com/wp-content/uploads/2015/01/Pressure-Point-MtG-Art.jpg">
+                                <div class="caption">
+                                    <h1><span style="color:#ff3333">[</span> PROJECTS <span style="color:#ff3333">]</span></h1>
+                                </div>
+                            </div>
+                            <div class="project-container" id="container">
+                                <div class="project-row">
+			                         <!-- Projects gallery -->
+                                    <div class="project-one">
+                                        <div class="project-tab-one" id="project-tab-one">
+                                            <div class="container">
+                                                <div class="project-img">
+                                                    <img src="http://www.artofmtg.com/wp-content/uploads/2016/09/Aether-Meltdown-Kaladesh-MtG-Art.jpg">
+                                                </div>
+                                                <div class="text-container">
+                                                    <h1>Team 7 Game</h1>
+                                                    <p>League of Legends (abbreviated LoL) is a multiplayer online battle arena video game developed and published by Riot Games for Microsoft Windows and macOS. The game follows a freemium model and is supported by microtransactions, and was inspired by the Warcraft III: The Frozen Throne mod, Defense of the Ancients.</p>
+                                                    <div class="learn-more">
+                                                        <a href="#">EXPLORE</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="project-two">
+                                        <div class="project-tab-two" id="project-tab-two">
+                                            <div class="container">
+                                                <div class="project-img">
+                                                    <img src="http://www.artofmtg.com/wp-content/uploads/2017/01/Baral-Chief-of-Compliance-Aether-Revolt-MtG-Art.jpg">
+                                                </div>
+                                                <div class="text-container">
+                                                    <h1>Untitled Fantasy Game</h1>
+                                                    <p>League of Legends (abbreviated LoL) is a multiplayer online battle arena video game developed and published by Riot Games for Microsoft Windows and macOS. The game follows a freemium model and is supported by microtransactions, and was inspired by the Warcraft III: The Frozen Throne mod, Defense of the Ancients.</p>
+                                                    <div class="learn-more">
+                                                        <a href="#">EXPLORE</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="project-three">
+                                        <div class="project-tab-three" id="project-tab-three">
+                                            <div class="container">
+                                                <div class="project-img">
+                                                    <img src="http://www.artofmtg.com/wp-content/uploads/2017/01/Prizefighter-Construct-Aether-Revolt-MtG-Art.jpg">
+                                                </div>
+                                                <div class="text-container">
+                                                    <h1>Untitled Game project</h1>
+                                                    <p>League of Legends (abbreviated LoL) is a multiplayer online battle arena video game developed and published by Riot Games for Microsoft Windows and macOS. The game follows a freemium model and is supported by microtransactions, and was inspired by the Warcraft III: The Frozen Throne mod, Defense of the Ancients.</p>
+                                                    <div class="learn-more">
+                                                        <a href="#">EXPLORE</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+			            </div>
+			            <div id="Contact" class="tab-pane fade">
+                            <div class="caption">
+                                <div class="topword">
+                                    <h1>GET <span style="color:#ff3333">IN TOUCH</span></h1>
+								</div>
+								<!--<div class="bottomword">
+								    <h1>IN TOUCH</h1>
+								</div>-->
+                            </div>
+                            <div class="subtext">
+                                <p>Find more information, send over some feedback, or just reach out.</p>
+                            </div>
+                                <ul class="contactInfo">
+                                    <li class="email">
+                                        <a href="#">E-MAIL</a>
+                                    </li>
+                                    <li class="linkedin">
+                                        <a href="https://www.linkedin.com/in/marcuslhum/">LINKEDIN</a>
+                                    </li>
+                                    <li class="artstation">
+                                        <a href="#">GITHUB</a>
+                                    </li>
+                                </ul>
+							<!--<div class="contact-box">
+								<form action=" /action_page.php">
+									<label for="name">NAME</label>
+									<input type="text" id="name" name="name" placeholder="...">
+									
+									<label for="email">E-MAIL</label>
+									<input type="text" id="email" name="email" placeholder="...">
+									
+									<label for="comments">COMMENTS</label>
+									<textarea id="comments" name="comments" placeholder="..." style="height:200px">
+									</textarea>
+									<input type="submit" value="SUBMIT">
+								</form>
+                        </div>-->
+			         </div>
+                </div>
             </div>
         </div>
-		<font size="3" color="black">!</font>
-    <div class="picturelinks">
-      <div class="container">
-        <a href="facebook.com">
-         <div class="left">
-         <img src="/images/composer.jpg" alt="" class="image" style="border: #ffffff 6px solid;"/>
-           <div class="middle">
-             <div class="text">Portfolio<br>(Under Construction)</div>
-           </div>
-         </div>
-           </a>
-        <a href="facebook.com">
-         <div class="center">
-         <img src="/images/scavenger.jpg" alt="" class="image" style="border: #ffffff 6px solid;"/>
-           <div class="middle">
-             <div class="text">Sketchbook<br>(Under Construction)</div>
-           </div>
-         </div>
-        </a>
-         <a href="facebook.com">
-         <div class="right">
-         <img src="http://mobyfrancke.com/wp-content/uploads/2013/06/009.jpg" alt="" class="image" style="border: #ffffff 6px solid;"/>
-           <div class="middle">
-             <div class="text">Concept Art<br>(Under Construction)</div>
-           </div>
-         </div>
-        </a>
-      </div>
-    </div>
-  </body>
+    <!-- /#wrapper -->
+    <!-- Menu Toggle Script -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script>
+                $("button").click(function(e) {
+                    e.preventDefault();
+                    $("#wrapper").toggleClass("toggled");
+                });
+            </script>
+    
+            <script>
+                $("button").click(function(e) {
+                    e.preventDefault();
+                        $("#menu-toggle").toggleClass("toggled");
+                });
+            </script>
+    
+            <script>
+                // Open the Modal
+                function openModal() {
+                  document.getElementById('myModal').style.display = "block";
+                }
+
+                // Close the Modal
+                function closeModal() {
+                  document.getElementById('myModal').style.display = "none";
+                }
+
+                var slideIndex = 1;
+                showSlides(slideIndex);
+
+                // Next/previous controls
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+
+                // Thumbnail image controls
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                  var i;
+                  var slides = document.getElementsByClassName("mySlides");
+                  var dots = document.getElementsByClassName("demo");
+                  var captionText = document.getElementById("caption");
+                  if (n > slides.length) {slideIndex = 1}
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";
+                  dots[slideIndex-1].className += " active";
+                  captionText.innerHTML = dots[slideIndex-1].alt;
+                }
+            </script>
+        
+            <script>
+                $(document).ready(function(){
+                  // Add smooth scrolling to all links
+                  $("a").on('click', function(event) {
+
+                    // Make sure this.hash has a value before overriding default behavior
+                    if (this.hash !== "") {
+                      // Prevent default anchor click behavior
+                      event.preventDefault();
+
+                      // Store hash
+                      var hash = this.hash;
+
+                      // Using jQuery's animate() method to add smooth page scroll
+                      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                      $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                      }, 800, function(){
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                      });
+                    } // End if
+                  });
+                });
+        </script>
+        <script>
+			$(document).keydown(function(event) { 
+			    if (event.keyCode == 27) { 
+			          document.getElementById('myModal').style.display = "none";
+			    }
+			});
+        </script>
+		<script>
+			function myFunction() {
+			    var x = document.getElementById("myTopnav");
+			    if (x.className === "topnav") {
+			        x.className += " responsive";
+			    } else {
+			        x.className = "topnav";
+			    }
+			}
+		</script>
+        <script>
+            window.sr = ScrollReveal({duration: 750});
+            sr.reveal('.test', 250);
+        </script>
+	</body>
 </html>
