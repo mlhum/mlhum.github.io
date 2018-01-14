@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 @import url('https://fonts.googleapis.com/css?family=Crimson_Text');
@@ -787,6 +788,7 @@ button:focus {
     font-size: 16px;
     transition: 0.4s ease;
     font-weight: bold;
+    margin-bottom: 20px;
 }
 
 #Projects .learn-more a:hover{
@@ -799,7 +801,7 @@ button:focus {
 }
 
 #project-tab-two .text-container {
-    margin-top: 120px;
+    margin-top: 100px;
     width: 300px;
     float: left;
     display: inline-block;
@@ -838,10 +840,10 @@ button:focus {
 }
 
 #project-tab-three .text-container {
-    margin-top: 120px;
+    margin-top: 100px;
     width: 300px;
     float: right;
-    display: inline-block;
+    display: block;
     height: 100%;
 }
 
