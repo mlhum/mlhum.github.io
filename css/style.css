@@ -5,6 +5,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
 @import url('https://fonts.googleapis.com/css?family=Roboto:500');
+@import url('https://fonts.googleapis.com/css?family=Lato:900');
 
 html, body {
 height: 100%;
@@ -175,7 +176,7 @@ button:focus {
 }
 
 #sidebar-wrapper {
-	z-index: 1000;
+	z-index: 999;
 	position: fixed;
 	left: 250px;
 	width: 0;
@@ -278,6 +279,7 @@ button:focus {
 	position: relative;
 	overflow: hidden;
 	height: 100vh;
+    max-height: 900px;
 	min-height: 500px;
 }
 
@@ -313,7 +315,7 @@ button:focus {
     white-space: nowrap;
 	overflow: hidden;
     font-size: 70px;
-    color: #f5f5f5;
+    color: #262626;
     letter-spacing: 3px;
     font-family: 'Roboto', sans-serif;
     opacity: 0;
@@ -330,7 +332,7 @@ button:focus {
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
-    opacity: 0.8;
+    opacity: 1;
     -webkit-transition:all 0.6s ease;
     -moz-transition:all 0.6s ease;
     -o-transition:all 0.6s ease;
@@ -344,20 +346,19 @@ button:focus {
 .subcaption {
     display: inline;
     position: absolute;
-    top: 50%;
+    top: 52%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
 .subcaption h2{
     margin-top: 90px;
-    color: #f5f5f5;
+    color: #262626;
     opacity: 0.8;
     font-family: 'Roboto', sans-serif;
     font-size: 25px;
     letter-spacing: 6px;
     margin-left: 7px;
-    opacity: 1;
     -webkit-transition:all 0.6s ease;
     -moz-transition:all 0.6s ease;
     -o-transition:all 0.6s ease;
@@ -404,21 +405,34 @@ button:focus {
     margin: auto;
 }
 
+#Home .home-body .circleimage{
+    padding-top: 6vh;
+    display: none;
+}
+
+#Home .home-body .circleimage img{
+    width: 280px;
+    height: 260px;
+}
+
 #Home .home-body .home-text-header{
-    margin-top: 50px;
+    margin-top: 16vh;
     margin-bottom: 20px;
+
 }
 
 #Home .home-body .home-text-header h1{
     font-family: 'Roboto', 'sans-serif';
     letter-spacing: 1px;
-    font-size: 60px;
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 4px;
+    border-bottom: 2px solid #ff3333;
 }
 
 .tab-content #Home .home-body .text-container{
     margin-left: auto;
     margin-right: auto;
-    padding-left: 30px;
 	max-width: 1000px;
 	overflow: hidden;
 	z-index: 100;
@@ -431,9 +445,9 @@ button:focus {
     transition:all 0.6s ease;
 }
 
-#Home .text-container .home-text p{
+#Home .text-container .home-text{
     font-family: 'Raleway';
-    width: 250px;
+    width: 280px;
     color: #606060;
     line-height: 1.6;
 }
@@ -442,7 +456,6 @@ button:focus {
     margin-top: 30px;
     width: 125px;
     float: left;
-    margin-bottom: 40px;
 }
 
 #Home .text-container .aboutlink a{
@@ -462,6 +475,7 @@ button:focus {
 }
 
 #Home .image-container{
+    margin-top: 8vh;
     float: right;
     -webkit-transition:all 0.6s ease;
     -moz-transition:all 0.6s ease;
@@ -503,13 +517,18 @@ button:focus {
     left: -9999px;
     right: -9999px;
     margin: auto;
-    opacity: 0.9;
+    opacity: 1;
+    
+}
+
+#Sketches .tab-jumbotron img{
+    filter: brightness(70%) blur(2px);
 }
 
 .tab-jumbotron .caption {
     display: inline-block;
     position: absolute;
-	width: 280px;
+	width: 300px;
     text-align: center;
     top: 50%;
     left: 50%;
@@ -520,7 +539,7 @@ button:focus {
 .tab-jumbotron .caption h1{
 	display: inline-block;
     font-family: 'Roboto', sans-serif;
-    font-size: 40px;
+    font-size: 42px;
     letter-spacing: 3px;
     -webkit-animation: fadeIn 0.5s ease 0.5s forwards;
     -moz-animation: fadeIn 0.5s ease 0.5s forwards;
@@ -594,12 +613,11 @@ button:focus {
 
 /* The Modal (background) */
 .modal {
-    padding-top: 5%;
+    padding-top: 2%;
   	display: none;
   	position: fixed;
   	z-index: 1;
   	left: 0;
-  	top: 0;
   	width: 100%;
   	height: 100vh;
   	overflow: auto;
@@ -613,7 +631,7 @@ button:focus {
   	background-color: #fefefe;
   	margin: auto;
  	padding: 0;
-	max-width: 700px;
+	max-width: 500px;
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
     animation-name: animatetop;
@@ -639,6 +657,7 @@ button:focus {
 }
 
 /* Hide the slides by default */
+/* Hide the slides by default */
 .mySlides {
   display: none;
 }
@@ -652,7 +671,7 @@ button:focus {
   width: auto;
   padding: 16px;
   margin-top: -50px;
-  color: #f5f5f5;
+  color: #262626;
   font-weight: bold;
   font-size: 30px;
   transition: 0.6s ease;
@@ -696,7 +715,7 @@ button:focus {
     opacity: 0;
 }
 
-#Projects h1{
+#Projects .project-container h1{
     font-family: 'Roboto', 'open sans';
     color: #f5f5f5;
     font-size: 36px;
@@ -740,11 +759,11 @@ button:focus {
 
 #project-tab-one:hover{
     filter: grayscale(0%);
-    background-color:  #66ccff;
+    background-color: #c69c6d;
 }
 
 #project-tab-one .text-container {
-    margin-top: 120px;
+    margin-top: 100px;
     width: 300px;
     float: right;
     display: block;
@@ -798,14 +817,14 @@ button:focus {
 
 #project-tab-two:hover{
     filter: grayscale(0%);
-    background-color:  #ff6060;
+    background-color:  #c7c7d6;
 }
 
 #project-tab-two .text-container {
     margin-top: 100px;
     width: 300px;
     float: left;
-    display: inline-block;
+    display: block;
     height: 100%;
 }
 
@@ -832,7 +851,7 @@ button:focus {
 
 #project-tab-three:hover{
     filter: grayscale(0%);
-    background-color:  #7cdb6d;
+    background-color:  #4eed8d;
 }
 
 #Projects .project-tab-three .project-img {
@@ -911,12 +930,8 @@ button:focus {
     margin-left: 40px;
     margin-top: 20px;
     margin-bottom: 20px;
-    border-bottom: 1px solid #A8A8A8;
     width: 500px;
-    -webkit-transition: 0.3s ease;
-	-moz-transition: 0.3s ease;
-	-o-transition: 0.3s ease;
-	transition: 0.3s ease;
+    border-bottom: 1px solid #A8A8A8  
 }
 
 #Contact .contactInfo li a{
@@ -934,10 +949,6 @@ button:focus {
 #Contact .contactInfo li a:hover, a:active{
     text-decoration: none;
     color: #ff3333;
-}
-
-#Contact .contactInfo li:hover{
-    border-bottom: 1px solid #ff3333;
 }
 
 #Contact .contactInfo .email {
@@ -967,10 +978,10 @@ button:focus {
 }
 
 #Contact .contactInfo .artstation {
-            -webkit-animation: fadeIn 0.5s ease 0.8s forwards;
-       -moz-animation: fadeIn 0.5s ease 1.3s forwards;
-         -o-animation: fadeIn 0.5s ease 1.3s forwards;
-            animation: fadeIn 0.5s ease 1.3s forwards;
+    -webkit-animation: fadeIn 0.5s ease 0.8s forwards;
+    -moz-animation: fadeIn 0.5s ease 1.3s forwards;
+    -o-animation: fadeIn 0.5s ease 1.3s forwards;
+    animation: fadeIn 0.5s ease 1.3s forwards;
 }
 
 .contact-box {
@@ -1064,22 +1075,40 @@ input[type=submit]:hover {
     font-weight: bold;
 }
 
-.sidebar-nav .sidebar-quote {
-    color:#a9a9a9;
-    margin-top: 30px;
-    font-size: 13px;
-    height: 50px;
-    line-height: 20px;
-    font-family: 'Playfair Display';
-    font-style: italic;
-}
-
 .sidebar-nav > li.active > a,
 .sidebar-nav > li.active > a:hover,
 .sidebar-nav > li.active > a:focus {
 	color: #262626;
 	background-color: #ff3333;
 	font-weight: bold;
+}
+
+#sidebar-wrapper .sidebar-footer {
+    left: 0px;
+    bottom: 0px;
+    height: 30px;
+    width: 100%;
+}
+
+.table {
+    display: table;
+    margin: 0 auto;
+}
+
+#horizontal-list{
+    list-style: none;
+    margin-left: 52px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#horizontal-list li{
+    display: inline;
+    padding: 10px;
+}
+
+#horizontal-list img{
+    width: 25px;
 }
 
 #jumbotron-container #scrolldown a {
@@ -1097,7 +1126,7 @@ input[type=submit]:hover {
     width: 46px;
     height: 46px;
     margin-left: -23px;
-    border: 1px solid #f5f5f5;
+    border: 2px solid #262626;
     border-radius: 100%;
     box-sizing: border-box;
     transition: 0.3s;
@@ -1111,45 +1140,116 @@ input[type=submit]:hover {
     width: 16px;
     height: 16px;
     margin: -12px 0 0 -8px;
-    border-left: 1px solid #f5f5f5;
-    border-bottom: 1px solid #f5f5f5;
+    border-left: 2px solid #262626;
+    border-bottom: 2px solid #262626;
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
     box-sizing: border-box;
     transition: 0.4s;
 }
 
-/* width */
 ::-webkit-scrollbar {
     width: 6px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
     background: #d0d0d0; 
 }
  
-/* Handle */
 ::-webkit-scrollbar-thumb {
     background: #707070;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #ff3333;
     transition: background 0.4s;
 }
 
-@media only screen and (max-width: 700px) {
-    #Home .image-container{
+@media only screen and (max-width: 750px) {
+    
+    #Projects .project-img img{
         display: none;
+    }
+    
+    #Projects .text-container{
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        text-align: center;
+    }
+
+    #Projects .text-container p{
+        text-align: center;
+    }
+    
+    #project-tab-two {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #project-tab-one {    	
+	   background-color:  #66ccff;
+        filter: grayscale(0%);
+    }
+
+    .project-one {
+        filter: blur(0px);
+    }
+    
+    #project-tab-two {    	
+        background-color:  #ff6060;
+        filter: grayscale(0%);
+    }
+    
+    .project-two {
+        filter: blur(0px);
+    }
+
+    #project-tab-three {    	
+        background-color:  #4eed8d;
+        filter: grayscale(0%);
+    }
+    
+    .project-three {
+        filter: blur(0px);
     }
 }
 
-/* Adaptive Sketch Gallery */
 @media (max-width: 1000px) {
     .column {
         width: 50%;
+    }
+    
+    #Home .image-container{
+        display: none;
+    }
+    
+    #Home .home-body .circleimage{
+        display: block;
+    }
+    
+    #Home #home-body{
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+#Home .home-body .home-text-header{
+    margin-top: 0px;
+    }
+    
+    #Home #home-body .home-text{
+        width: 300px;
+    }
+    
+    #Home .text-container .aboutlink{
+        float: none;
+        padding-top: 20px;
+        margin: auto;
+    }
+    
+    .tab-content #Home .home-body .text-container{
+        float: none;
     }
 }
 
@@ -1168,6 +1268,16 @@ input[type=submit]:hover {
 		filter: grayscale(0%);
 	}
 }
+
+@media (max-width: 700px) {
+    .column img:hover {
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	transform: scale(1.0, 1.0);
+	filter: none;
+    }
+}
 /* Contact Responsiveness */
 @media screen and (max-width: 600px) {
     #Contact .contactInfo {
@@ -1185,14 +1295,15 @@ input[type=submit]:hover {
         transition: 0.3s ease;
         width: 120px;
         text-align: center;
-        background-color: #262626;
         padding: 10px;
+        background-color: #262626;
     }
 
     #Contact .contactInfo li a{
         font-size: 18px;
         letter-spacing: 1px;
         color: #f5f5f5;
+        background-color: #262626;
         text-decoration: none;
         -webkit-transition: 0.3s ease;
         -moz-transition: 0.3s ease;
@@ -1200,6 +1311,10 @@ input[type=submit]:hover {
         transition: 0.3s ease;
         font-family: 'Raleway';
         font-size: 16px;
+    }
+    
+    #Contact .contactInfo li a:hover{
+        color: none;
     }
     
     #Contact .subtext {
@@ -1279,9 +1394,6 @@ input[type=submit]:hover {
   #wrapper.toggled .tab-content {
     position: relative;
   }
-    #Home .home-body .test .image-container{
-    
-    }
 }
 
 #menu-toggle.toggled {
@@ -1309,13 +1421,15 @@ input[type=submit]:hover {
         opacity: 0;
     }
 }
-    
-@media (min-height: 800px) {
-    #Home .image-container{
-        margin-top: 150px;
+
+@media (max-width: 800px) {
+    #Projects .project-img img{
+        display: none;
     }
+}
     
-    .tab-content #Home .home-body .text-container{
-        margin-top: 150px;
+@media (max-width: 600px) {
+    .tab-jumbotron img{
+        visibility: hidden;
     }
 }
