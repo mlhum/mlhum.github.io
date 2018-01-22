@@ -403,6 +403,7 @@ button:focus {
     height: 100vh;
     max-width: 750px;
     margin: auto;
+    min-height: 800px;
 }
 
 #Home .home-body .circleimage{
