@@ -403,7 +403,6 @@ button:focus {
     height: 100vh;
     max-width: 750px;
     margin: auto;
-    min-height: 800px;
 }
 
 #Home .home-body .circleimage{
@@ -1252,6 +1251,10 @@ input[type=submit]:hover {
     .tab-content #Home .home-body .text-container{
         float: none;
     }
+	
+    #Home .home-body{
+    	min-height: 800px;
+	}
 }
 
 @media (max-width: 800px) {
