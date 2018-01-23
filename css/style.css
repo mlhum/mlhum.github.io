@@ -759,7 +759,7 @@ button:focus {
 
 #project-tab-one:hover{
     filter: grayscale(0%);
-    background-color: #c69c6d;
+    background-color: #36454f;
 }
 
 #project-tab-one .text-container {
@@ -817,7 +817,7 @@ button:focus {
 
 #project-tab-two:hover{
     filter: grayscale(0%);
-    background-color:  #c7c7d6;
+    background-color:  #708090;
 }
 
 #project-tab-two .text-container {
