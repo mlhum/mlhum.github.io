@@ -6,6 +6,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
 @import url('https://fonts.googleapis.com/css?family=Roboto:500');
 @import url('https://fonts.googleapis.com/css?family=Lato:900');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans');
 
 html, body {
 height: 100%;
@@ -38,7 +39,7 @@ padding: none;
 	text-align: center;
 	padding: 12px 17px;
 	font-size: 12px;
-	font-family: 'Raleway';
+	font-family: 'IBM Plex Sans', sans-serif;
 	letter-spacing: 3px;
 	font-weight: bold;
 	    -webkit-transition:all 0.3s ease;
@@ -450,7 +451,7 @@ button:focus {
 }
 
 #Home .text-container .home-text{
-    font-family: 'Raleway';
+    font-family: 'IBM Plex Sans', sans-serif;
     width: 280px;
     color: #606060;
     line-height: 1.6;
@@ -726,7 +727,7 @@ button:focus {
 }
 
 #Projects p{
-    font-family: 'Raleway';
+    font-family: 'IBM Plex Sans', sans-serif;
     color: #f5f5f5;
     font-size: 14px;
 }
@@ -915,7 +916,7 @@ button:focus {
     margin-left: 80px;
     font-size: 16px;
     color: #262626;
-    font-family: 'Raleway';
+    font-family: 'IBM Plex Sans', sans-serif;
     width: 380px;
     opacity: 0;
     -webkit-animation: fadeIn 0.4s ease 0.3s forwards;
@@ -992,7 +993,7 @@ button:focus {
 	max-width: 400px;
 	background-color: #e6e6e6;
 	padding: 15px;
-	font-family: 'Raleway';
+	font-family: 'IBM Plex Sans', sans-serif;
 }
 
 input[type=text], select, textarea {
@@ -1024,7 +1025,6 @@ input[type=submit]:hover {
 
 .container {
 	padding: 20px;
-	font-family: 'Raleway';
 	font-size: 12px;
 	letter-spacing: 2px;
 	max-width: 450px;
@@ -1063,7 +1063,7 @@ input[type=submit]:hover {
     display: block;
     text-decoration: none;
     color: #fff;
-    font-family: 'Raleway';
+    font-family: 'IBM Plex Sans', sans-serif;
     letter-spacing: 3px;
     font-size:10px;
     transition: color 0.4s, border 0.4s, background 0.4s, outline 0.4s;
