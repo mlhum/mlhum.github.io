@@ -290,6 +290,7 @@ button:focus {
 
 .jumbotron-container img {
 	position: absolute;
+    height: 200vh;
 	top: -9999px;
 	bottom: -9999px;
 	left: -9999px;
@@ -320,7 +321,7 @@ button:focus {
     white-space: nowrap;
 	overflow: hidden;
     font-size: 70px;
-    color: #f5f5f5;
+    color: #262626;
     letter-spacing: 3px;
     font-family: 'Roboto', sans-serif;
     opacity: 0;
