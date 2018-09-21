@@ -443,7 +443,7 @@ button:focus {
 .tab-content #Home .home-body .text-container{
     margin-left: auto;
     margin-right: auto;
-	max-width: 1000px;
+	max-width: 1024px;
 	overflow: hidden;
 	z-index: 100;
     float: left;
@@ -979,7 +979,7 @@ button:focus {
     margin-bottom: 20px;
 }
 
-#Contact .contactInfo li a{
+#Contact .contactInfo li a {
     font-size: 18px;
     letter-spacing: 1px;
     color: #989898;
@@ -1264,7 +1264,7 @@ input[type=submit]:hover {
     }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
     .column {
         width: 50%;
     }
@@ -1337,7 +1337,7 @@ input[type=submit]:hover {
         margin-left: -40px;
     }
     
-    #Contact .contactInfo li{
+    #Contact .contactInfo li {
         padding: none;
         margin-left: auto;
         margin-right: auto;
@@ -1346,28 +1346,33 @@ input[type=submit]:hover {
         -moz-transition: 0.3s ease;
         -o-transition: 0.3s ease;
         transition: 0.3s ease;
-        width: 120px;
         text-align: center;
         padding: 10px;
-        background-color: #262626;
     }
 
-    #Contact .contactInfo li a{
+    #Contact .contactInfo li a {
         font-size: 18px;
         letter-spacing: 1px;
-        color: #f5f5f5;
-        background-color: #262626;
+        color: #ff3333;
+        background-color: #f5f5f5;
         text-decoration: none;
         -webkit-transition: 0.3s ease;
         -moz-transition: 0.3s ease;
         -o-transition: 0.3s ease;
         transition: 0.3s ease;
-        font-family: 'Raleway';
+        font-family: 'IBM Plex sans', sans-serif;
         font-size: 16px;
+        width: unset;
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px solid #ff3333;
+        width: 130px;
+        padding: 10px 0;
     }
     
     #Contact .contactInfo li a:hover{
-        color: none;
+        color: #f5f5f5;
+        background-color: #ff3333;
     }
     
     #Contact .subtext {
@@ -1426,7 +1431,7 @@ input[type=submit]:hover {
 }
 
 /* Sidebar Expandable */
-@media (min-width:1000px) {
+@media (min-width: 1025px) {
   #wrapper {
     padding-left: 250px;
   }
@@ -1453,7 +1458,7 @@ input[type=submit]:hover {
     transform: rotate(180deg);
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1025px) {
 	.topnav {
  		top: -42px;
 	}
