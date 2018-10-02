@@ -18,6 +18,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126873051-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-126873051-1');
+    </script>
 
 </head>
 
@@ -39,9 +48,6 @@
                         <div class="item">
                             <a data-toggle="tab" href="#Home">
                                 <img src="images\properbirdvector (2).png" class="main">
-                                <div class="sidebarlogo">
-                                    <img src="images\logocolorring.png">
-                                </div>
                             </a>
                         </div>
                     </div>
@@ -203,11 +209,6 @@
                                     <!-- Next/previous controls -->
                                     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                                     <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-                                    <!-- Caption text -->
-                                    <div class="caption-container">
-                                        <p id="caption"></p>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -229,7 +230,7 @@
                                         <div class="project-box-text">
                                             <h1>The Electric Share</h1>
                                             <p>Created for the G.I. game jam, this is a 4 player local multiplayer game created in less than 48 hours from scratch. Fight as a colorful spark of electricity in order to become the last bolt standing!</p>
-                                            <a class="learn-more" href="#">EXPLORE</a>
+                                            <a class="learn-more" data-toggle="tab" href="#ElectricShare">EXPLORE</a>
                                         </div>
                                     </div>
                                 </div>
@@ -273,72 +274,16 @@
                                 </div>
                             </div>
                         </div>
-                        <!--
-                        <div class="project-container" id="container">
-                            <div class="project-row">
-                                <div class="project-one">
-                                    <div class="project-tab-one" id="project-tab-one">
-                                        <div class="container">
-                                            <div class="project-img">
-                                                <img src="images\sfwmenu.png">
-                                            </div>
-                                            <div class="project-icon">
-                                                <img src="">
-                                            </div>
-                                            <div class="text-container">
-                                                <h1>Mountain Hugh's Construction</h1>
-                                                <p>This two player game was created in less than 48 hours for the
-                                                    Global Game Jam 2018. Pit yourself against a friend in this battle
-                                                    of wits and I-beams. Built from the ground up, all of the code,
-                                                    sounds and art assets were generated during the jam. It's fun
-                                                    mechanics and comedic presentation won it the "most fun" title!</p>
-                                                <div class="learn-more">
-                                                    <a href="https://globalgamejam.org/2018/games/hugh-jass-construction">EXPLORE</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                    </div>
+                    <div id="ElectricShare" class="tab-pane fade">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-12 col-lg-6">
                                 </div>
-                                <div class="project-two">
-                                    <div class="project-tab-two" id="project-tab-two">
-                                        <div class="container">
-                                            <div class="project-img">
-                                                <img src="images\whaleswailclose.jpg">
-                                            </div>
-                                            <div class="text-container">
-                                                <h1>"Whale's Wail" Alarm System</h1>
-                                                <p>Using arduino in combination with external sensors and wiring, our
-                                                    team created a motion sensor that would emit a high pitched sound
-                                                    if triggered. With password setup on startup and customizable alarm
-                                                    sounds and tunes, programming and wiring this alarm was an
-                                                    insightful experience.</p>
-                                                <div class="learn-more">
-                                                    <a href="#">EXPLORE</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div class="col-xs-12 col-lg-6">
                                 </div>
-
-                                <div class="project-three">
-                                        <div class="project-tab-three" id="project-tab-three">
-                                            <div class="container">
-                                                <div class="project-img">
-                                                    <img src="http://www.artofmtg.com/wp-content/uploads/2017/01/Prizefighter-Construct-Aether-Revolt-MtG-Art.jpg">
-                                                </div>
-                                                <div class="text-container">
-                                                    <h1>Untitled Game project</h1>
-                                                    <p>League of Legends (abbreviated LoL) is a multiplayer online battle arena video game developed and published by Riot Games for Microsoft Windows and macOS. The game follows a freemium model and is supported by microtransactions, and was inspired by the Warcraft III: The Frozen Throne mod, Defense of the Ancients.</p>
-                                                    <div class="learn-more">
-                                                        <a href="#">EXPLORE</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
                             </div>
                         </div>
-                        -->
                     </div>
                     <div id="Contact" class="tab-pane fade">
                         <div class="caption">

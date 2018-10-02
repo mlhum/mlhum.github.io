@@ -164,7 +164,7 @@ button:focus {
 }
 
 .portrait:hover .item .main{
-	opacity: 0.2;
+	opacity: 0.8;
 }
 
 #wrapper {
