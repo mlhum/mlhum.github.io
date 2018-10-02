@@ -764,7 +764,7 @@ button:focus {
 }
 
 #Projects .project-box .project-box-text {
-    margin: 15px;
+    margin: 15px 0;
     color: #262626;
 }
 
@@ -846,7 +846,10 @@ button:focus {
     transition: 0.8s ease;
 }
 
-#Projects .learn-more a {
+#Projects .tab-jumbotron img {
+    filter: brightness(70%) blur(2px);
+}
+#Projects a.learn-more {
     color: #ff3333;
     text-decoration: none;
     font-size: 14px;
@@ -855,9 +858,11 @@ button:focus {
     margin-bottom: 20px;
     padding: 5px 10px;
     border: 1px solid #ff3333;
+    display: inline-block;
+    vertical-align: bottom;
 }
 
-#Projects .learn-more a:hover{
+#Projects a.learn-more:hover{
     color: #f6f6f6;
     background-color: #ff3333;
 }
