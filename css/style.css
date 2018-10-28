@@ -7,15 +7,51 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:900');
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans');
 
+/* Website Body General */
 html,
 body {
     height: 100%;
     margin: none;
     padding: none;
-    background-color: #F5F5F5 !important;
+    background-color: #FFFAF4 !important;
     z-index: -501;
 }
 
+.red-highlight {
+    color: #ff3333;
+}
+
+.external-link a {
+    padding: 10px 15px;
+    border: 1px solid #262626;
+    color: #262626;
+    text-decoration: none;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 12px;
+}
+
+.external-link a:hover,
+.external-link a:active,
+.external-link a:focus {
+    border: 1px solid #ff3333;
+    background-color: #ff3333;
+    text-decoration: none;
+    color: #262626;
+    font-size: 12px;
+}
+
+p {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+/* Tablet Nav */
 .topnav {
     background-color: #262626;
     overflow: hidden;
@@ -93,6 +129,7 @@ body {
     visibility: hidden;
 }
 
+/* Menu -Toggle Button */
 #menu-toggle {
     transition: 0.5s ease;
     margin-top: 20px;
@@ -112,10 +149,6 @@ body {
     transition: all 0.3s ease;
 }
 
-.red-highlight {
-    color: #ff3333;
-}
-
 button:focus {
     outline: 0;
 }
@@ -132,25 +165,14 @@ button:focus {
 }
 
 .toggle:visited,
-toggle:link,
-toggle:active {
+.toggle:link,
+.toggle:active {
     color: #fff;
     text-decoration: none;
     border: none;
 }
 
-.portrait {
-    margin: 60px 0 30px;
-    text-align: center;
-    overflow: hidden;
-}
-
-.portrait .portrait-img {
-    height: 140px;
-    width: 140px;
-    border-radius: 50%;
-}
-
+/* Main Wrapper */
 #wrapper {
     padding-left: 0;
     margin: 0;
@@ -186,6 +208,19 @@ toggle:active {
 
 #wrapper.toggled #sidebar-wrapper {
     width: 250px;
+}
+
+/* Full screen sidebar */
+.portrait {
+    margin: 60px 0 30px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.portrait .portrait-img {
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
 }
 
 .sidebar-nav>.sidebar-brand {
@@ -261,6 +296,7 @@ toggle:active {
     height: 100%
 }
 
+/* Main Jumbotron */
 .jumbotron-container {
     position: relative;
     overflow: hidden;
@@ -277,11 +313,10 @@ toggle:active {
     right: -9999px;
     margin: auto;
     opacity: 0;
-    -webkit-animation: fadeIn 0.5s ease 0.3s forwards;
-    -moz-animation: fadeIn 0.5s ease 0.3s forwards;
-    -o-animation: fadeIn 0.5s ease 0.3s forwards;
-    animation: fadeIn 0.5s ease 0.3s forwards;
-    -webkit-backface-visibility: hidden;
+    -webkit-animation: fadeIn 0.5s ease 0.9s forwards;
+    -moz-animation: fadeIn 0.5s ease 0.9s forwards;
+    -o-animation: fadeIn 0.5s ease 0.9s forwards;
+    animation: fadeIn 0.5s ease 0.9s forwards;
 }
 
 .home-jumbotron {
@@ -315,7 +350,6 @@ toggle:active {
     -moz-animation: fadeIn 1s ease 1s forwards;
     -o-animation: fadeIn 1s ease 1s forwards;
     animation: fadeIn 1s ease 1s forwards;
-    -webkit-backface-visibility: hidden;
 }
 
 .subimage {
@@ -356,6 +390,7 @@ toggle:active {
     transition: all 0.6s ease;
 }
 
+/* Animation Keyframes */
 @-webkit-keyframes fadeIn {
     0% {
         opacity: 0;
@@ -420,6 +455,7 @@ toggle:active {
     }
 }
 
+/* Home */
 .tab-content #Home {
     overflow: hidden;
     margin: none;
@@ -500,7 +536,6 @@ toggle:active {
 }
 
 #Home .image-container {
-    margin-top: 8vh;
     float: right;
     -webkit-transition: all 0.6s ease;
     -moz-transition: all 0.6s ease;
@@ -527,6 +562,7 @@ toggle:active {
     margin-right: auto;
 }
 
+/* Tab Jumbotron Styling */
 .tab-jumbotron {
     position: relative;
     overflow: hidden;
@@ -544,10 +580,6 @@ toggle:active {
     margin: auto;
     opacity: 1;
 
-}
-
-#Sketches .tab-jumbotron img {
-    filter: brightness(70%) blur(2px);
 }
 
 .tab-jumbotron .caption {
@@ -571,8 +603,12 @@ toggle:active {
     -moz-animation: fadeIn 0.5s ease 0.5s forwards;
     -o-animation: fadeIn 0.5s ease 0.5s forwards;
     animation: fadeIn 0.5s ease 0.5s forwards;
-    -webkit-backface-visibility: hidden;
     opacity: 0;
+}
+
+/* Sketches */
+#Sketches .tab-jumbotron img {
+    filter: brightness(70%) blur(2px);
 }
 
 #Sketches>#container {
@@ -588,16 +624,32 @@ toggle:active {
     transition: all 0.3s ease;
 }
 
-#sketchImages {
+.sketchcontainer .sketch img {
+    width: 100%;
+}
+
+.sketchcontainer .sketch .sketch-box {
+    padding-bottom: 10px;
+}
+
+.sketchcontainer .row .col-sm-12,
+.sketchcontainer .row .col-md-6,
+.sketchcontainer .row .col-lg-4 {
+    padding: 0 5px;
+}
+.sketchcontainer .sketch img {
     -webkit-animation: fadeIn 0.5s ease 1.0s forwards;
     -moz-animation: fadeIn 0.5s ease 1.0s forwards;
     -o-animation: fadeIn 0.5s ease 1.0s forwards;
     animation: fadeIn 0.5s ease 1.0s forwards;
-    -webkit-backface-visibility: hidden;
     opacity: 0;
 }
-
-.column img:hover {
+.sketchcontainer .sketch img  {
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    filter: grayscale(75%);
+}
+.sketchcontainer .sketch img:hover {
     -moz-box-shadow: 0 4px 10px #999;
     -webkit-box-shadow: 0 4px 10px #999;
     box-shadow: 0 4px 10px #999;
@@ -606,126 +658,7 @@ toggle:active {
     -webkit-filter: grayscale(0%);
 }
 
-.column img {
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-    filter: grayscale(75%);
-    margin-top: 12px;
-}
-
-.column {
-    float: left;
-    width: 33%;
-    padding: 6px;
-}
-
-/*
-.project-column {
-    float: left;
-    width: 50%;
-}
-
-.project-row:after {
-    content: "";
-    display: table;
-}
-*/
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* The Modal (background) */
-.modal {
-    padding-top: 2%;
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    overflow: auto;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Modal Content */
-.modal-content {
-    position: relative;
-    background-color: #fefefe;
-    margin: auto;
-    padding: 0;
-    max-width: 500px;
-    -webkit-animation-name: animatetop;
-    -webkit-animation-duration: 0.4s;
-    animation-name: animatetop;
-    animation-duration: 0.4s;
-}
-
-/* The Close Button */
-.closemodal {
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    color: #f5f5f5;
-    font-size: 50px;
-    transition: 0.3s ease;
-    z-index: 500;
-}
-
-.closemodal:hover,
-.closemodal:focus {
-    text-decoration: none;
-    cursor: pointer;
-    color: #ff3333;
-}
-
-/* Hide the slides by default */
-/* Hide the slides by default */
-.mySlides {
-    display: none;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -50px;
-    color: #262626;
-    font-weight: bold;
-    font-size: 30px;
-    transition: 0.6s ease;
-    user-select: none;
-    -webkit-user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-    right: 0;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-    color: #ff3333;
-    background-color: rgba(0, 0, 0, 0.6);
-    text-decoration: none;
-}
-
-/* Caption text */
-.caption-container {
-    text-align: center;
-    background-color: black;
-    padding: 2px 16px;
-    color: white;
-}
-
+/* Projects */
 .tab-content #Projects {
     margin-left: auto;
     margin-right: auto;
@@ -738,7 +671,6 @@ toggle:active {
     -moz-animation: fadeIn 0.5s ease 1.0s forwards;
     -o-animation: fadeIn 0.5s ease 1.0s forwards;
     animation: fadeIn 0.5s ease 1.0s forwards;
-    -webkit-backface-visibility: hidden;
     opacity: 0;
     margin-left: auto;
     margin-right: auto;
@@ -868,22 +800,25 @@ toggle:active {
 }
 
 #Projects a.learn-more {
-    color: #ff3333;
+    color: #262626;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 12px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
     transition: 0.4s ease;
-    font-weight: bold;
     margin-bottom: 20px;
-    padding: 5px 10px;
-    border: 1px solid #ff3333;
+    padding: 8px 15px;
+    border: 1px solid #262626;
     display: inline-block;
     vertical-align: bottom;
 }
 
 #Projects a.learn-more:hover {
-    color: #f6f6f6;
+    color: #262626;
     background-color: #ff3333;
+    border: 1px solid #ff3333;
 }
 
 #project-tab-two:hover {
@@ -938,6 +873,44 @@ toggle:active {
     height: 100%;
 }
 
+/*Project Tabs - Electric Share */
+#ElectricShare .container {
+    max-width: 750px;
+}
+
+#ElectricShare .title-image {
+    text-align: center;
+}
+
+#ElectricShare .title-image img {
+    width: 100%;
+    margin: 30px 0 0;
+    max-width: 400px;
+}
+
+#ElectricShare .title-image .title-caption {
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0 0 20px;
+}
+
+#ElectricShare .project-description img.es-gameplay-1 {
+    width: 100%;
+    margin: 20px 0;
+}
+
+#ElectricShare .project-description .es-animation-frames img{
+    width: 100%;
+}
+
+#ElectricShare .external-link a {
+    display: block;
+    width: 200px;
+    margin: 20px 0 60px;
+}
+
+/* Contact Tab */
 .tab-content #Contact {
     margin-left: auto;
     margin-right: auto;
@@ -963,20 +936,6 @@ toggle:active {
     letter-spacing: 1px;
     font-weight: bold;
 }
-
-/*
-#Contact .caption .bottomword h1{
-	font-size: 60px;	
-	color: #ff3333;
-	-webkit-animation: fadeIn 0.4s ease 0.7s forwards;
-	-moz-animation: fadeIn 0.4s ease 0.7s forwards;
-	-o-animation: fadeIn 0.4s ease 0.7s forwards;
-	animation: fadeIn 0.4s ease 0.7s forwards;
-	opacity: 0;
-	margin: none;
-	padding: none;
-}
-*/
 
 #Contact .subtext {
     margin-top: 7x;
@@ -1097,13 +1056,6 @@ input[type=submit]:hover {
     color: #262626;
 }
 
-.container {
-    padding: 20px;
-    font-size: 12px;
-    letter-spacing: 2px;
-    max-width: 450px;
-}
-
 .tab-content {
     width: 100%;
     position: absolute;
@@ -1124,6 +1076,11 @@ input[type=submit]:hover {
     list-style: none;
     margin-left: 25px;
     overflow: hidden;
+    opacity: 0;
+    -webkit-animation: fadeIn 0.5s ease 0.5s forwards;
+    -moz-animation: fadeIn 0.5s ease 0.5s forwards;
+    -o-animation: fadeIn 0.5s ease 0.5s forwards;
+    animation: fadeIn 0.5s ease 0.5s forwards;
 }
 
 .sidebar-nav li {
@@ -1190,6 +1147,7 @@ input[type=submit]:hover {
     width: 25px;
 }
 
+/* Jumbotron */
 #jumbotron-container #scrolldown a {
     padding-top: 60px;
     transition: 0.3s;
@@ -1245,6 +1203,7 @@ input[type=submit]:hover {
     transition: background 0.4s;
 }
 
+/* Media Queries */
 @media only screen and (max-width: 750px) {
 
     #Projects .project-img img {
@@ -1430,9 +1389,7 @@ input[type=submit]:hover {
         padding-bottom: 10px;
         margin-left: 0px;
         width: 100%;
-        background-color: #;
     }
-
 }
 
 /* Top-nav Expandable */
@@ -1537,3 +1494,4 @@ input[type=submit]:hover {
             visibility: hidden;
         }
     }
+}

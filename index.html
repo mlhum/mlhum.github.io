@@ -17,7 +17,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126873051-1"></script>
     <script>
@@ -108,16 +107,17 @@
                             </div>
                             <div class="text-container">
                                 <div class="home-text-header">
-                                    <h1>Hello, I'm Marcus</h1>
+                                    <h1>Hi, I'm Marcus</h1>
                                 </div>
                                 <div class="home-text">
                                     <p>I'm a 2nd year student currently studying systems design engineering at the
-                                        University of Waterloo with a passion for visual arts and design. My goal
-                                        is to develop and apply what I know about visual arts and human factors
-                                        towards any kind of design objectives.<br><br>This website is a personal
-                                        project. Its purpose is to develop and apply knowledge of web-development
-                                        as well as provide a location to archive sketches and other projects. Thank
-                                        you for stopping by; I hope you find something worth seeing.</p>
+                                        University of Waterloo with a passion for traditional and digital art as well as user-oriented design.
+                                        My goal
+                                        is to develop and apply what I know about user interfaces, visual arts, and
+                                        human factors
+                                        towards all kinds of design objectives. I strive to create clean, beautiful,
+                                        and intuitive
+                                        interfaces from scratch.
                                 </div>
                                 <div class="aboutlink">
                                     <a href="images\Resume.pdf" target="_blank">View Resume</a>
@@ -136,70 +136,36 @@
                             </div>
                         </div>
                         <div class="sketchcontainer" id="container">
-                            <div class="row" id="sketchImages">
-                                <!-- Image gallery -->
-                                <div class="column">
-                                    <img onclick="openModal();currentSlide(1)" src="images\properbird.jpg" style="width:100%"
-                                        class="galleryimg">
-                                    <img onclick="openModal();currentSlide(4)" src="images\Treantedit.jpg" style="width:100%"
-                                        class="galleryimg">
-                                    <img onclick="openModal();currentSlide(7)" src="images\wolf.jpg" style="width:100%"
-                                        class="galleryimg">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="sketch">
+                                        <div class="sketch-box">
+                                            <img src="images/full-scarecrow.jpg">
+                                        </div>
+                                        <div class="sketch-box">
+                                            <img src="images/wolf.jpg">
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="column">
-                                    <img onclick="openModal();currentSlide(2)" src="images\scarecrow.jpg" style="width:100%"
-                                        class="galleryimg">
-                                    <img onclick="openModal();currentSlide(5)" src="images\oneghost.jpg" style="width:100%"
-                                        class="galleryimg">
-                                    <img onclick="openModal();currentSlide(8)" src="images\spaceman.jpg" style="width:100%"
-                                        class="galleryimg">
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="sketch">
+                                        <div class="sketch-box">
+                                            <img src="images/Treantedit.jpg">
+                                        </div>
+                                        <div class="sketch-box">
+                                            <img src="images/ghost.jpg">
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="column">
-                                    <img onclick="openModal();currentSlide(3)" src="images\ghost.jpg" style="width:100%"
-                                        class="galleryimg">
-                                    <img onclick="openModal();currentSlide(6)" src="images\globewhale.jpg" style="width:100%"
-                                        class="galleryimg">
-                                </div>
-                            </div>
-                            <!-- The Modal/Lightbox -->
-                            <div id="myModal" class="modal">
-                                <span class="closemodal" onclick="closeModal()">&times;</span>
-                                <div class="modal-content">
-
-                                    <div class="mySlides">
-                                        <img src="images\properbird.jpg" style="width:100%">
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="sketch">
+                                        <div class="sketch-box">
+                                            <img src="images/properbird.jpg">
+                                        </div>
+                                        <div class="sketch-box">
+                                            <img src="images/globewhale.jpg">
+                                        </div>
                                     </div>
-
-                                    <div class="mySlides">
-                                        <img src="images\scarecrow.jpg" style="width: 100%">
-                                    </div>
-
-                                    <div class="mySlides">
-                                        <img src="images\ghost.jpg" style="width:100%">
-                                    </div>
-
-                                    <div class="mySlides">
-                                        <img src="images\Treantedit.jpg" style="width:100%">
-                                    </div>
-
-                                    <div class="mySlides">
-                                        <img src="images\oneghost.jpg" style="width:100%">
-                                    </div>
-
-                                    <div class="mySlides">
-                                        <img src="images\globewhale.jpg" style="width:100%">
-                                    </div>
-
-                                    <div class="mySlides">
-                                        <img src="images\wolf.jpg" style="width:100%">
-                                    </div>
-
-                                    <div class="mySlides">
-                                        <img src="images\spaceman.jpg" style="width:100%">
-                                    </div>
-                                    <!-- Next/previous controls -->
-                                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
                                 </div>
                             </div>
                         </div>
@@ -223,7 +189,7 @@
                                             <p>Created for the G.I. game jam, this is a 4 player local multiplayer game
                                                 created in less than 48 hours from scratch. Fight as a colorful spark
                                                 of electricity in order to become the last bolt standing!</p>
-                                            <a class="learn-more" data-target="_blank" href="https://github.com/mlhum/TheElectricShare">EXPLORE</a>
+                                            <a class="learn-more" data-toggle="tab" href="#ElectricShare">EXPLORE</a>
                                         </div>
                                     </div>
                                 </div>
@@ -255,64 +221,61 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="project-column col-md-4 col-sm-6 col-xs-12">
-                                    <div class="project-box">
-                                        <div class="project-box-img-container">
-                                            <img src="images\whaleswailclose.jpg">
-                                        </div>
-                                        <div class="project-box-text">
-                                            <h1>Sonar Alarm System</h1>
-                                            <p>Using arduino in combination with external sensors and wiring, our team
-                                                created a motion sensor. With password setup on startup and
-                                                customizable alarm sounds and tunes, programming and wiring this alarm
-                                                was an insightful experience.</p>
-                                            <a class="learn-more" href="#">Explore</a>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
-                    <!--
                     <div id="ElectricShare" class="tab-pane fade">
                         <div class="container">
                             <div class="row">
                                 <div class="col-xs-12">
-                                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                                        <ol class="carousel-indicators">
-                                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                                            <li data-target="#myCarousel" data-slide-to="1"></li>
-                                            <li data-target="#myCarousel" data-slide-to="2"></li>
-                                            <li data-target="#myCarousel" data-slide-to="3"></li>
-                                        </ol>
-                                        <div class="carousel-inner">
-                                            <div class="item active">
-                                                <img src="images/Title.png" alt="Slide 1">
+                                    <div class="title-image">
+                                        <img src="images/characters-posed.svg" class="electric-share-title-img">
+                                        <div class="title-caption">The Electric Share</div>
+                                    </div>
+                                    <div class="project-description">
+                                        <p>"The Electric Share" is a local multiplayer battle arena game created in
+                                            under 48 hours during the G.I. Games Institute 2018 Game Jam by our Game
+                                            Jam Team "Spaghetti Yeti". Following the game jam theme "Dynamic", the game
+                                            was designed with the idea of constant motion and change in mind. Each
+                                            player controls a living spark of electricity.
+                                        </p>
+                                        <img src="images/gameplay1.png" class="es-gameplay-1">
+                                        <p>
+                                            As players move, they
+                                            generate electricity which can be used to release greater and greater
+                                            blasts of energy upon opponents. However, these blasts don't hurt them
+                                            necessarily; they charge your opponents up! Players die by being
+                                            "overcharged", which occurs when a blast of electricity puts them over
+                                            their voltage limit. Be careful shooting indiscriminately, or your opponent
+                                            just might send your own charge right back at you. The last spark standing
+                                            (or running) is the victor.
+                                        </p>
+                                        <div class="row es-animation-frames">
+                                            <div class="col-xs-12 col-sm-6">
+                                                <img src="images/planetary-devastation.png">
                                             </div>
-                                            <div class="item">
-                                                <img src="images/gameplay1.png" alt="Slide 2">
-                                            </div>
-                                            <div class="item">
-                                                <img src="images/gameplay2.png" alt="Slide 3">
-                                            </div>
-                                            <div class="item">
-                                                <img src="images/gameplay3.png" alt="Slide 4">
+                                            <div class="col-xs-12 col-sm-6">
+                                                <img src="images/planetary-devastation-2.png">
                                             </div>
                                         </div>
-                                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                                            <span class="glyphicon glyphicon-chevron-left"></span>
-                                            <span class="sr-only">Previous</span>
-                                        </a>
-                                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                                            <span class="glyphicon glyphicon-chevron-right"></span>
-                                            <span class="sr-only">Next</span>
-                                        </a>
+                                        <p>
+                                            The game was developed entirely in Unity. All art assets were generated within the 48 hours from scratch. These included
+                                            a level background, main-menu art, platforms, player characters, and projectiles.
+                                            Using <strong>Adobe Illustrator and Photoshop</strong>, all frames were hand drawn using tablets.
+                                            The project was ambitious given the time limit, but the end product was genuinely
+                                            fun to play with little to no bugs. Using <strong>Git</strong> as a version control system, the 
+                                            team was able to work cohesively on different aspects of the project and routinely
+                                            bring it together for testing. Efforts payed off, as it was deemed "most fun" and "most on-theme" of all participants.
+                                        </p>
+                                    </div>
+                                    <div class="external-link">
+                                        <a target="_blank" href="https://github.com/mlhum/TheElectricShare">View The
+                                            Repository &#187</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    -->
                     <div id="Contact" class="tab-pane fade">
                         <div class="caption">
                             <div class="topword">
@@ -320,7 +283,7 @@
                             </div>
                         </div>
                         <div class="subtext">
-                            <p>Find more information, send over some feedback, or just reach out.</p>
+                            <p>Find more information, send feedback, or just reach out.</p>
                         </div>
                         <ul class="contactInfo">
                             <li class="email">
@@ -333,26 +296,12 @@
                                 <a target="_blank" href="https://github.com/mlhum">Github</a>
                             </li>
                         </ul>
-                        <!--<div class="contact-box">
-								<form action=" /action_page.php">
-									<label for="name">NAME</label>
-									<input type="text" id="name" name="name" placeholder="...">
-									
-									<label for="email">E-MAIL</label>
-									<input type="text" id="email" name="email" placeholder="...">
-									
-									<label for="comments">COMMENTS</label>
-									<textarea id="comments" name="comments" placeholder="..." style="height:200px">
-									</textarea>
-									<input type="submit" value="SUBMIT">
-								</form>
-                        </div>-->
                     </div>
                 </div>
             </div>
         </div>
         <!-- /#wrapper -->
-        <!-- Menu Toggle Script -->
+        <!-- Scripts -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script>
             $("button").click(function (e) {
@@ -366,51 +315,6 @@
                 e.preventDefault();
                 $("#menu-toggle").toggleClass("toggled");
             });
-        </script>
-
-        <script>
-            function openModal() {
-                winWidth = $(window).width();
-                if (winWidth < 700) return;
-                document.getElementById('myModal').style.display = "block";
-            }
-
-            function closeModal() {
-                document.getElementById('myModal').style.display = "none";
-            }
-
-            var slideIndex = 1;
-            showSlides(slideIndex);
-
-            function plusSlides(n) {
-                showSlides(slideIndex += n);
-            }
-
-            function currentSlide(n) {
-                showSlides(slideIndex = n);
-            }
-
-            function showSlides(n) {
-                var i;
-                var slides = document.getElementsByClassName("mySlides");
-                var dots = document.getElementsByClassName("demo");
-                var captionText = document.getElementById("caption");
-                if (n > slides.length) {
-                    slideIndex = 1
-                }
-                if (n < 1) {
-                    slideIndex = slides.length
-                }
-                for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";
-                }
-                for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" active", "");
-                }
-                slides[slideIndex - 1].style.display = "block";
-                dots[slideIndex - 1].className += " active";
-                captionText.innerHTML = dots[slideIndex - 1].alt;
-            }
         </script>
         <script>
             $('a[href*="#"]')
@@ -448,12 +352,6 @@
                     x.className = "topnav";
                 }
             }
-        </script>
-        <script>
-            window.sr = ScrollReveal({
-                duration: 750
-            });
-            sr.reveal('.test', 250);
         </script>
     </div>
 </body>
