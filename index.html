@@ -111,7 +111,8 @@
                                 </div>
                                 <div class="home-text">
                                     <p>I'm a 2nd year student currently studying systems design engineering at the
-                                        University of Waterloo with a passion for traditional and digital art as well as user-oriented design.
+                                        University of Waterloo with a passion for traditional and digital art as well
+                                        as user-oriented design.
                                         My goal
                                         is to develop and apply what I know about user interfaces, visual arts, and
                                         human factors
@@ -203,7 +204,7 @@
                                             <p>Designed and implemented the administrator user interface tool and group
                                                 manager for the Ontario Institute of Cancer Research Central User
                                                 Directory using HTML5/CSS/Bootstrap.</p>
-                                            <a class="learn-more" href="#">Explore</a>
+                                            <a class="learn-more" data-toggle="tab" href="#CUD">Explore</a>
                                         </div>
                                     </div>
                                 </div>
@@ -224,7 +225,7 @@
                             </div>
                         </div>
                     </div>
-                    <div id="ElectricShare" class="tab-pane fade">
+                    <div id="ElectricShare" class="tab-pane fade projects-tab">
                         <div class="container">
                             <div class="row">
                                 <div class="col-xs-12">
@@ -259,18 +260,67 @@
                                             </div>
                                         </div>
                                         <p>
-                                            The game was developed entirely in Unity. All art assets were generated within the 48 hours from scratch. These included
-                                            a level background, main-menu art, platforms, player characters, and projectiles.
-                                            Using <strong>Adobe Illustrator and Photoshop</strong>, all frames were hand drawn using tablets.
-                                            The project was ambitious given the time limit, but the end product was genuinely
-                                            fun to play with little to no bugs. Using <strong>Git</strong> as a version control system, the 
-                                            team was able to work cohesively on different aspects of the project and routinely
-                                            bring it together for testing. Efforts payed off, as it was deemed "most fun" and "most on-theme" of all participants.
+                                            The game was developed entirely in Unity. All art assets were generated
+                                            within the 48 hours from scratch. These included a level background,
+                                            main-menu art, platforms, player characters, and
+                                            projectiles. Using <strong>Adobe Illustrator and Photoshop</strong>, all
+                                            frames were
+                                            hand drawn using tablets. The project was ambitious given the time limit,
+                                            but the end product was
+                                            genuinely fun to play with little to no bugs. Using <strong>Git</strong> as
+                                            a version
+                                            control system, the team was able to work cohesively on different aspects
+                                            of the project and
+                                            routinely bring it together for testing. Efforts payed off, as it was
+                                            deemed "most
+                                            fun" and "most on-theme" of all participants.
                                         </p>
                                     </div>
                                     <div class="external-link">
                                         <a target="_blank" href="https://github.com/mlhum/TheElectricShare">View The
                                             Repository &#187</a>
+                                    </div>
+                                    <div class="external-link">
+                                        <a data-toggle="tab" href="#Projects">Return to Projects</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="CUD" class="tab-pane fade projects-tab">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="title-image">
+                                        <img src="images/cud-logo.png" class="cud-title-image">
+                                        <div class="title-caption">Central User Directory U.I.</div>
+                                    </div>
+                                    <div class="project-description">
+                                        <p>The Ontario Institute for Cancer Research utilizes the Central User
+                                            Directory is an administrative tool for group management and coordination.
+                                            The tool contains multiple features for managing memberships groups as well
+                                            as individual users.
+                                        </p>
+                                        <img src="images/CUD/CUD-Dashboard.png" class="cud-screenshot">
+                                        <p>Together with the UI/UX designer as a part of the OICR-WebDev team, a
+                                            completely overhauled administrative user interface was constructed.
+                                            Mockups were produced in <strong>Photoshop</strong>, and versions were
+                                            coordinated with members through the use of <strong>inVision</strong>. The
+                                            tool itself was built using <strong>HTML, SASS, and Bootstrap</strong>
+                                            using <strong>Jekyll</strong> as a static site generator.</p>
+                                        <img src="images/CUD/CUD-Activity-Log.png" class="cud-screenshot">
+                                        <p>The final version displays a cleaner design with a more intuitive workflow.
+                                            Notifications and warnings important to the core users (such as expiration
+                                            and pending approval) are more clearly displayed, and navigation has
+                                            been improved through a new navigation bar. A new colour scheme gives the
+                                            design a neater appearance and a stronger brand-identity.</p>
+                                        <img src="images/CUD/CUD-crop-manage-group.png" class="cud-screenshot">
+                                        <p>The interface structure has been completed, but still requires
+                                            implementation. Thus, it has not yet been integrated into the current
+                                            central user directory.</p>
+                                    </div>
+                                    <div class="external-link">
+                                        <a data-toggle="tab" href="#Projects">Return to Projects</a>
                                     </div>
                                 </div>
                             </div>
@@ -309,7 +359,6 @@
                 $("#wrapper").toggleClass("toggled");
             });
         </script>
-
         <script>
             $("button").click(function (e) {
                 e.preventDefault();
@@ -334,13 +383,6 @@
                         });
                     }
                 });
-            });
-        </script>
-        <script>
-            $(document).keydown(function (event) {
-                if (event.keyCode == 27) {
-                    document.getElementById('myModal').style.display = "none";
-                }
             });
         </script>
         <script>

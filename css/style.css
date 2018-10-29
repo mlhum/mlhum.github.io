@@ -242,7 +242,7 @@ button:focus {
     outline: none;
     -webkit-transition: color 1s ease;
     -moz-transition: color 1s ease;
-    -o-transition: color 1sease;
+    -o-transition: color 1s ease;
     transition: color 1s ease;
 }
 
@@ -313,10 +313,10 @@ button:focus {
     right: -9999px;
     margin: auto;
     opacity: 0;
-    -webkit-animation: fadeIn 0.5s ease 0.9s forwards;
-    -moz-animation: fadeIn 0.5s ease 0.9s forwards;
-    -o-animation: fadeIn 0.5s ease 0.9s forwards;
-    animation: fadeIn 0.5s ease 0.9s forwards;
+    -webkit-animation: fadeIn 0.5s ease 0.7s forwards;
+    -moz-animation: fadeIn 0.5s ease 0.7s forwards;
+    -o-animation: fadeIn 0.5s ease 0.7s forwards;
+    animation: fadeIn 0.5s ease 0.7s forwards;
 }
 
 .home-jumbotron {
@@ -873,26 +873,32 @@ button:focus {
     height: 100%;
 }
 
-/*Project Tabs - Electric Share */
-#ElectricShare .container {
+/*Project Tabs*/
+.projects-tab .container {
     max-width: 750px;
 }
 
-#ElectricShare .title-image {
+.projects-tab .title-image {
     text-align: center;
 }
 
-#ElectricShare .title-image img {
+.projects-tab .title-image img {
     width: 100%;
     margin: 30px 0 0;
     max-width: 400px;
 }
 
-#ElectricShare .title-image .title-caption {
+.projects-tab .title-image .title-caption {
     font-size: 30px;
     font-weight: 600;
     text-transform: uppercase;
     padding: 0 0 20px;
+}
+
+.projects-tab .external-link a {
+    display: block;
+    width: 200px;
+    margin: 20px 0;
 }
 
 #ElectricShare .project-description img.es-gameplay-1 {
@@ -904,10 +910,14 @@ button:focus {
     width: 100%;
 }
 
-#ElectricShare .external-link a {
-    display: block;
-    width: 200px;
-    margin: 20px 0 60px;
+#CUD .title-image img {
+    width: 250px;
+    margin: 50px 0 10px;
+}
+
+#CUD .project-description .cud-screenshot {
+    width: 100%;
+    margin: 20px 0;
 }
 
 /* Contact Tab */
@@ -1113,7 +1123,8 @@ input[type=submit]:hover {
 
 .sidebar-nav>li.active>a,
 .sidebar-nav>li.active>a:hover,
-.sidebar-nav>li.active>a:focus {
+.sidebar-nav>li.active>a:focus,
+.sidebar-nav>li.active>a:active {
     color: #262626;
     background-color: #ff3333;
     font-weight: bold;
@@ -1187,7 +1198,7 @@ input[type=submit]:hover {
 }
 
 ::-webkit-scrollbar {
-    width: 6px;
+    width: 8px;
 }
 
 ::-webkit-scrollbar-track {
@@ -1200,7 +1211,7 @@ input[type=submit]:hover {
 
 ::-webkit-scrollbar-thumb:hover {
     background: #ff3333;
-    transition: background 0.4s;
+    transition: 0.6s;
 }
 
 /* Media Queries */
