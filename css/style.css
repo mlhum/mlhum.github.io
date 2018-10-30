@@ -920,6 +920,25 @@ button:focus {
     margin: 20px 0;
 }
 
+#UWRoboHub .title-image img {
+    width: 380px;
+    margin: 50px 0 10px;
+    border: 1px solid #ff3333;
+}
+
+#UWRoboHub .project-description .robohub-screenshot {
+    width: 100%;
+    margin: 20px 0;
+}
+
+#UWRoboHub .img-container {
+    width: 100%;
+    text-align: center;
+}
+#UWRoboHub .project-description .robohub-screenshot.small-screenshot {
+    width: 250px;
+    border: 1px solid #ff3333;
+}
 /* Contact Tab */
 .tab-content #Contact {
     margin-left: auto;

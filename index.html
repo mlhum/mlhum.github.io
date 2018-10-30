@@ -197,6 +197,19 @@
                                 <div class="project-column col-md-4 col-sm-6 col-xs-12">
                                     <div class="project-box">
                                         <div class="project-box-img-container">
+                                            <img src="images/m3hum_RoboHub_Logo_Submission_final.png">
+                                        </div>
+                                        <div class="project-box-text">
+                                            <h1>UW RoboHub Logo</h1>
+                                            <p>This is the general thought process behind my submission for the new
+                                                University of Waterloo RoboHub.</p>
+                                            <a class="learn-more" data-toggle="tab" href="#UWRoboHub">EXPLORE</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-column col-md-4 col-sm-6 col-xs-12">
+                                    <div class="project-box">
+                                        <div class="project-box-img-container">
                                             <img src="images/cud-shot.png">
                                         </div>
                                         <div class="project-box-text">
@@ -214,11 +227,11 @@
                                             <img src="images/sfwmenu.png">
                                         </div>
                                         <div class="project-box-text">
-                                            <h1>Hugh Jass' Construction</h1>
+                                            <h1>Mountain Hugh's Construction</h1>
                                             <p>This two player game was created in less than 48 hours for the
                                                 Global Game Jam 2018. Built from the ground up, all code,
                                                 sound, and art assets were generated during the jam.</p>
-                                            <a class="learn-more" href="#">Explore</a>
+                                            <a class="learn-more" target="_blank" href="https://github.com/mlhum/Game-Jam-2018">Explore</a>
                                         </div>
                                     </div>
                                 </div>
@@ -326,76 +339,116 @@
                             </div>
                         </div>
                     </div>
-                    <div id="Contact" class="tab-pane fade">
-                        <div class="caption">
-                            <div class="topword">
-                                <h1>Get <span style="color:#ff3333">In Touch</span></h1>
+                    <div id="UWRoboHub" class="tab-pane fade projects-tab">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="title-image">
+                                        <img src="images/m3hum_RoboHub_Logo_Submission_final.png" class="robohub-title-image">
+                                        <div class="title-caption">UW RoboHub Logo Design</div>
+                                    </div>
+                                    <div class="project-description">
+                                        <p>The University of Waterloo's RoboHub is a new robotics research and testing
+                                            facility in need of a logo. They desired a timeless, memorable recognizable
+                                            design that was simple and clean even from a distance. After establishing
+                                            some general themes (technology, innovation, togetherness of a hub,
+                                            robotics), I proceeded to sketch out as many ideas as possible.
+                                        </p>
+                                        <img src="images/heart-process.jpg" class="robohub-screenshot">
+                                        <p>Many early iterations heavily relied on imagery and designs taken from the
+                                            robots currently a part of the RoboHub fleet. While this is on-theme, it
+                                            takes away fromt he timeless nature of the logo. Thus, a more broader
+                                            concept was realized; a robotic heart. 
+                                        </p>
+                                        <div class="img-container">
+                                                <img src="images/heart.png" class="robohub-screenshot small-screenshot">
+                                        </div>
+                                        <p>   
+                                            The idea of a heart captured the
+                                            concepts of a "hub" while also tying together elements of humanity and
+                                            technology (one of the main goals of robotics). The minimal "low-poly"
+                                            aesthetic conveys the artifical nature of the structure, as well as the
+                                            addition of cogs to add to its mechanical nature. Overall, I am pleased
+                                            with the result, although perhaps the robotic elements of the cogs could
+                                            have been done more creatively. The final asset was created using <strong>Adobe
+                                                Illustrator</strong>.</p>
+                                        <div class="external-link">
+                                            <a data-toggle="tab" href="#Projects">Return to Projects</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="subtext">
-                            <p>Find more information, send feedback, or just reach out.</p>
+                        <div id="Contact" class="tab-pane fade">
+                            <div class="caption">
+                                <div class="topword">
+                                    <h1>Get <span style="color:#ff3333">In Touch</span></h1>
+                                </div>
+                            </div>
+                            <div class="subtext">
+                                <p>Find more information, send feedback, or just reach out.</p>
+                            </div>
+                            <ul class="contactInfo">
+                                <li class="email">
+                                    <a target="_blank" href="mailto:marcus.hum11@gmail.com">e-mail</a>
+                                </li>
+                                <li class="linkedin">
+                                    <a target="_blank" href="https://www.linkedin.com/in/marcuslhum/">linkedin</a>
+                                </li>
+                                <li class="artstation">
+                                    <a target="_blank" href="https://github.com/mlhum">Github</a>
+                                </li>
+                            </ul>
                         </div>
-                        <ul class="contactInfo">
-                            <li class="email">
-                                <a target="_blank" href="mailto:marcus.hum11@gmail.com">e-mail</a>
-                            </li>
-                            <li class="linkedin">
-                                <a target="_blank" href="https://www.linkedin.com/in/marcuslhum/">linkedin</a>
-                            </li>
-                            <li class="artstation">
-                                <a target="_blank" href="https://github.com/mlhum">Github</a>
-                            </li>
-                        </ul>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- /#wrapper -->
-        <!-- Scripts -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script>
-            $("button").click(function (e) {
-                e.preventDefault();
-                $("#wrapper").toggleClass("toggled");
-            });
-        </script>
-        <script>
-            $("button").click(function (e) {
-                e.preventDefault();
-                $("#menu-toggle").toggleClass("toggled");
-            });
-        </script>
-        <script>
-            $('a[href*="#"]')
-                .not('[href="#"]')
-                .not('[href="#0"]')
-            $(document).ready(function () {
-                $("a").on('click', function (event) {
-
-                    if (this.hash !== "") {
-
-                        event.preventDefault();
-                        var hash = this.hash;
-                        $('html, body').animate({
-                            scrollTop: $(hash).offset().top
-                        }, 800, function () {
-                            window.location.hash = hash;
-                        });
-                    }
+            <!-- /#wrapper -->
+            <!-- Scripts -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script>
+                $("button").click(function (e) {
+                    e.preventDefault();
+                    $("#wrapper").toggleClass("toggled");
                 });
-            });
-        </script>
-        <script>
-            function myFunction() {
-                var x = document.getElementById("myTopnav");
-                if (x.className === "topnav") {
-                    x.className += " responsive";
-                } else {
-                    x.className = "topnav";
+            </script>
+            <script>
+                $("button").click(function (e) {
+                    e.preventDefault();
+                    $("#menu-toggle").toggleClass("toggled");
+                });
+            </script>
+            <script>
+                $('a[href*="#"]')
+                    .not('[href="#"]')
+                    .not('[href="#0"]')
+                $(document).ready(function () {
+                    $("a").on('click', function (event) {
+
+                        if (this.hash !== "") {
+
+                            event.preventDefault();
+                            var hash = this.hash;
+                            $('html, body').animate({
+                                scrollTop: $(hash).offset().top
+                            }, 800, function () {
+                                window.location.hash = hash;
+                            });
+                        }
+                    });
+                });
+            </script>
+            <script>
+                function myFunction() {
+                    var x = document.getElementById("myTopnav");
+                    if (x.className === "topnav") {
+                        x.className += " responsive";
+                    } else {
+                        x.className = "topnav";
+                    }
                 }
-            }
-        </script>
-    </div>
+            </script>
+        </div>
 </body>
 
 </html>
