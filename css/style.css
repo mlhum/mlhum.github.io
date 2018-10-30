@@ -138,6 +138,7 @@ p {
     height: 40px;
     border-radius: 50%;
     border: none;
+    display: none;
     position: fixed;
     z-index: 1;
     background-color: #ff3333;
@@ -1498,6 +1499,7 @@ input[type=submit]:hover {
     @media (min-width: 600px) {
         #menu-toggle {
             opacity: 0.7;
+            display: block;
         }
 
         .subcaption h2 {
