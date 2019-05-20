@@ -18,7 +18,7 @@ body {
 }
 
 .red-highlight {
-  color: #ff3333;
+  color: #ee383a;
 }
 
 .external-link a {
@@ -40,8 +40,8 @@ body {
 .external-link a:hover,
 .external-link a:active,
 .external-link a:focus {
-  border: 1px solid #ff3333;
-  background-color: #ff3333;
+  border: 1px solid #ee383a;
+  background-color: #ee383a;
   text-decoration: none;
   color: #262626;
   font-size: 12px;
@@ -86,7 +86,7 @@ p {
 }
 
 .topnav .brand {
-  background: #ff3333;
+  background: #ee383a;
   color: #262626;
   text-decoration: none;
 }
@@ -107,7 +107,7 @@ p {
 }
 
 .topnav a:hover {
-  background-color: #ff3333;
+  background-color: #ee383a;
   color: #262626;
   text-decoration: none;
   opacity: 1;
@@ -141,7 +141,7 @@ p {
   display: none;
   position: fixed;
   z-index: 1;
-  background-color: #ff3333;
+  background-color: #ee383a;
   opacity: 0;
   color: #262626;
   -webkit-transition: all 0.3s ease;
@@ -225,7 +225,7 @@ button:focus {
 }
 
 .sidebar-nav > .sidebar-brand {
-  border-bottom: 1px solid #ff3333;
+  border-bottom: 1px solid #ee383a;
   padding-bottom: 20px;
   margin-top: 5px;
   margin-bottom: 20px;
@@ -298,7 +298,7 @@ button:focus {
 
 /* Main Jumbotron */
 .jumbotron-container {
-  border-bottom: 10px solid #ff3333;
+  border-bottom: 10px solid #ee383a;
   position: relative;
   overflow: hidden;
   height: 100vh;
@@ -514,7 +514,7 @@ button:focus {
   font-size: 30px;
   font-weight: bold;
   padding-bottom: 4px;
-  border-bottom: 2px solid #ff3333;
+  border-bottom: 2px solid #ee383a;
 }
 
 .tab-content #Home .home-body .text-container {
@@ -577,8 +577,8 @@ button:focus {
 }
 
 #Home .text-container .aboutlink a:hover {
-  background-color: #ff3333;
-  border: 1px solid #ff3333;
+  background-color: #ee383a;
+  border: 1px solid #ee383a;
 }
 
 .tab-content #About {
@@ -849,8 +849,8 @@ button:focus {
 
 #Projects a.learn-more:hover {
   color: #262626;
-  background-color: #ff3333;
-  border: 1px solid #ff3333;
+  background-color: #ee383a;
+  border: 1px solid #ee383a;
 }
 
 #project-tab-two:hover {
@@ -920,6 +920,16 @@ button:focus {
   max-width: 400px;
 }
 
+.projects-tab .title-image img.military-title-img {
+  max-width: 180px;
+  margin: 70px 0 35px;
+}
+
+.projects-tab .title-image img.vehicle-title-img {
+  max-width: 250px;
+  margin: 70px 0 35px;
+}
+
 .projects-tab .title-image .title-caption {
   font-size: 30px;
   font-weight: 600;
@@ -955,7 +965,7 @@ button:focus {
 #UWRoboHub .title-image img {
   width: 380px;
   margin: 50px 0 10px;
-  border: 1px solid #ff3333;
+  border: 1px solid #ee383a;
 }
 
 #UWRoboHub .project-description .robohub-screenshot {
@@ -969,7 +979,7 @@ button:focus {
 }
 #UWRoboHub .project-description .robohub-screenshot.small-screenshot {
   width: 250px;
-  border: 1px solid #ff3333;
+  border: 1px solid #ee383a;
 }
 /* Contact Tab */
 .tab-content #Contact {
@@ -1042,7 +1052,7 @@ button:focus {
 #Contact .contactInfo li a:hover,
 a:active {
   text-decoration: none;
-  color: #ff3333;
+  color: #ee383a;
 }
 
 #Contact .contactInfo .email {
@@ -1110,7 +1120,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: #ff3333;
+  background-color: #ee383a;
   color: #262626;
 }
 
@@ -1155,7 +1165,7 @@ input[type="submit"]:hover {
   font-family: "IBM Plex Sans", sans-serif;
   letter-spacing: 3px;
   text-transform: uppercase;
-  font-size: 10px;
+  font-size: 11px;
   transition: color 0.4s, border 0.4s, background 0.4s, outline 0.4s;
   padding-top: 2px;
   padding-bottom: 2px;
@@ -1165,7 +1175,7 @@ input[type="submit"]:hover {
 .sidebar-nav li a:hover {
   text-decoration: none;
   color: #262626;
-  background: #ff3333;
+  background: #ee383a;
   font-weight: bold;
 }
 
@@ -1174,7 +1184,7 @@ input[type="submit"]:hover {
 .sidebar-nav > li.active > a:focus,
 .sidebar-nav > li.active > a:active {
   color: #262626;
-  background-color: #ff3333;
+  background-color: #ee383a;
   font-weight: bold;
 }
 
@@ -1258,7 +1268,7 @@ input[type="submit"]:hover {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #ff3333;
+  background: #ee383a;
   transition: 0.6s;
 }
 
@@ -1409,7 +1419,7 @@ input[type="submit"]:hover {
   #Contact .contactInfo li a {
     font-size: 18px;
     letter-spacing: 1px;
-    color: #ff3333;
+    color: #ee383a;
     background-color: #fffaf4;
     text-decoration: none;
     -webkit-transition: 0.3s ease;
@@ -1421,14 +1431,14 @@ input[type="submit"]:hover {
     width: unset;
     margin-left: auto;
     margin-right: auto;
-    border: 1px solid #ff3333;
+    border: 1px solid #ee383a;
     width: 130px;
     padding: 10px 0;
   }
 
   #Contact .contactInfo li a:hover {
     color: #f5f5f5;
-    background-color: #ff3333;
+    background-color: #ee383a;
   }
 
   #Contact .subtext {
@@ -1442,7 +1452,7 @@ input[type="submit"]:hover {
   #Contact .caption .topword {
     margin-left: auto;
     margin-right: auto;
-    border-bottom: 1px solid #ff3333;
+    border-bottom: 1px solid #ee383a;
     width: 300px;
     text-align: center;
   }
