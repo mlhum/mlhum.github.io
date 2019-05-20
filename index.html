@@ -36,7 +36,7 @@
     <div id="page_loader">
         <div class="topnav" id="myTopnav">
             <a data-toggle="tab" href="#Home" class="brand">M.L.H.</a>
-            <a data-toggle="tab" href="#Projects">Projects</a>
+            <a data-toggle="tab" href="#Projects">Portfolio</a>
             <a data-toggle="tab" href="#Sketches">Sketches</a>
             <a data-toggle="tab" href="#Contact">Contact</a>
             <a href="images/Resume v2 (web and ui-ux).pdf" target="_blank" class="resume">Resume</a>
@@ -54,11 +54,11 @@
                             Marcus L.H.
                         </h1>
                     </li>
-                    <li class="active">
-                        <a data-toggle="tab" href="#Home">About</a>
+                    <li>
+                        <a data-toggle="tab" href="#Home">Home</a>
                     </li>
                     <li>
-                        <a data-toggle="tab" href="#Projects">Projects</a>
+                        <a data-toggle="tab" href="#Projects">Portfolio</a>
                     </li>
                     <li>
                         <a data-toggle="tab" href="#Sketches">Sketches</a>
@@ -127,13 +127,16 @@
                                         interfaces from the ground up.
                                 </div>
                                 <div class="aboutlink">
-                                    <a href="images\Resume.pdf" target="_blank">View Resume <span class="right-align">&#187</span></a>
+                                    <a href="images\Resume.pdf" target="_blank">View resume <span
+                                            class="right-align">&#187</span></a>
                                 </div>
                                 <div class="aboutlink">
-                                    <a href="#Projects" data-toggle="tab" >See my past projects <span class="right-align">&#187</span></a>
+                                    <a href="#Projects" data-toggle="tab">View my portfolio<span
+                                            class="right-align">&#187</span></a>
                                 </div>
                                 <div class="aboutlink">
-                                    <a href="#Sketches" data-toggle="tab" >View online sketchbook <span class="right-align">&#187</span></a>
+                                    <a href="#Sketches" data-toggle="tab">View online sketchbook <span
+                                            class="right-align">&#187</span></a>
                                 </div>
                             </div>
                             <div class="image-container">
@@ -188,12 +191,42 @@
                         <div class="tab-jumbotron" id="tab-jumbotron">
                             <img src="images\projects-header.jpg">
                             <div class="caption">
-                                <h1><span class="red-highlight">[</span> Projects <span class="red-highlight">]</span>
+                                <h1><span class="red-highlight">[</span> Portfolio <span class="red-highlight">]</span>
                                 </h1>
                             </div>
                         </div>
                         <div class="project-container" id="container">
                             <div class="row row-flex">
+                                <div class="project-column col-md-4 col-sm-6 col-xs-12">
+                                    <div class="project-box">
+                                        <div class="project-box-img-container">
+                                            <img src="images/health-card-application-preview.PNG">
+                                        </div>
+                                        <div class="project-box-text">
+                                            <h1>Health Card Application</h1>
+                                            <p>Created to assist military families in the moving process, this web
+                                                application was built from the ground-up. Understanding user flows,
+                                                creating wireframes, and translating design to code were critical steps.
+                                            </p>
+                                            <a class="learn-more" data-toggle="tab" href="#Military">EXPLORE</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-column col-md-4 col-sm-6 col-xs-12">
+                                    <div class="project-box">
+                                        <div class="project-box-img-container">
+                                            <img src="images/vehicle-screenshot.png">
+                                        </div>
+                                        <div class="project-box-text">
+                                            <h1>Vehicle Transfer in Ontario</h1>
+                                            <p>Transferring vehicles in Ontario can be a complicated process. In an
+                                                effort to provide a better user experience, user journey maps were
+                                                created to better understand the problem space.
+                                            </p>
+                                            <a class="learn-more" data-toggle="tab" href="#Military">EXPLORE</a>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="project-column col-md-4 col-sm-6 col-xs-12">
                                     <div class="project-box">
                                         <div class="project-box-img-container">
@@ -250,19 +283,50 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="project-column col-md-4 col-sm-6 col-xs-12">
-                                    <div class="project-box">
-                                        <div class="project-box-img-container">
-                                            <img src="images/sfwmenu.png">
-                                        </div>
-                                        <div class="project-box-text">
-                                            <h1>Mountain Hugh's Construction</h1>
-                                            <p>This two player game was created in less than 48 hours for the
-                                                Global Game Jam 2018. Built from the ground up, all code,
-                                                sound, and art assets were generated during the jam.</p>
-                                            <a class="learn-more" target="_blank"
-                                                href="https://github.com/mlhum/Game-Jam-2018">Explore</a>
-                                        </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="Military" class="tab-pane fade projects-tab">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="title-image">
+                                        <img src="images/jawg.png" class="electric-share-title-img">
+                                        <div class="title-caption">Creating an Online Health Card Application</div>
+                                    </div>
+                                    <div class="project-description">
+                                        <p>Military Web Application
+                                        </p>
+                                    </div>
+                                    <div class="external-link">
+                                        <a target="_blank" href="https://github.com/mlhum/Game-Jam-Winter-2019">View The
+                                            Repository &#187</a>
+                                    </div>
+                                    <div class="external-link">
+                                        <a data-toggle="tab" href="#Projects">Return to Portfolio</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="VehicleJourney" class="tab-pane fade projects-tab">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="title-image">
+                                        <img src="images/jawg.png" class="electric-share-title-img">
+                                        <div class="title-caption">Vehicle Transfer in Ontario</div>
+                                    </div>
+                                    <div class="project-description">
+                                        <p>Vehicle Transfer is tough stuff.
+                                        </p>
+                                    </div>
+                                    <div class="external-link">
+                                        <a target="_blank" href="https://github.com/mlhum/Game-Jam-Winter-2019">View The
+                                            Repository &#187</a>
+                                    </div>
+                                    <div class="external-link">
+                                        <a data-toggle="tab" href="#Projects">Return to Portfolio</a>
                                     </div>
                                 </div>
                             </div>
@@ -305,7 +369,7 @@
                                             Repository &#187</a>
                                     </div>
                                     <div class="external-link">
-                                        <a data-toggle="tab" href="#Projects">Return to Projects</a>
+                                        <a data-toggle="tab" href="#Projects">Return to Portfolio</a>
                                     </div>
                                 </div>
                             </div>
@@ -316,7 +380,8 @@
                             <div class="row">
                                 <div class="col-xs-12">
                                     <div class="title-image">
-                                        <img src="images/m3hum_RoboHub_Logo_Submission_final.png" class="robohub-title-image">
+                                        <img src="images/m3hum_RoboHub_Logo_Submission_final.png"
+                                            class="robohub-title-image">
                                         <div class="title-caption">UW RoboHub Logo Design</div>
                                     </div>
                                     <div class="project-description">
@@ -342,10 +407,11 @@
                                             aesthetic conveys the artifical nature of the structure, as well as the
                                             addition of cogs to add to its mechanical nature. Overall, I am pleased
                                             with the result, although perhaps the robotic elements of the cogs could
-                                            have been done more creatively. The final asset was created using <strong>Adobe
+                                            have been done more creatively. The final asset was created using
+                                            <strong>Adobe
                                                 Illustrator</strong>.</p>
                                         <div class="external-link">
-                                            <a data-toggle="tab" href="#Projects">Return to Projects</a>
+                                            <a data-toggle="tab" href="#Projects">Return to Portfolio</a>
                                         </div>
                                     </div>
                                 </div>
@@ -408,7 +474,7 @@
                                             Repository &#187</a>
                                     </div>
                                     <div class="external-link">
-                                        <a data-toggle="tab" href="#Projects">Return to Projects</a>
+                                        <a data-toggle="tab" href="#Projects">Return to Portfolio</a>
                                     </div>
                                 </div>
                             </div>
@@ -447,7 +513,7 @@
                                             central user directory.</p>
                                     </div>
                                     <div class="external-link">
-                                        <a data-toggle="tab" href="#Projects">Return to Projects</a>
+                                        <a data-toggle="tab" href="#Projects">Return to Portfolio</a>
                                     </div>
                                 </div>
                             </div>
@@ -460,7 +526,7 @@
                             </div>
                         </div>
                         <div class="subtext">
-                            <p>Find more information, send feedback, or just reach out.</p>
+                            <p>For more information, pressing inquiries, or just to say hello:</p>
                         </div>
                         <ul class="contactInfo">
                             <li class="email">
