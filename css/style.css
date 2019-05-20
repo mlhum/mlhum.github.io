@@ -11,8 +11,6 @@
 html,
 body {
   height: 100%;
-  margin: none;
-  padding: none;
   background-color: #fffaf4 !important;
   z-index: -501;
 }
@@ -536,6 +534,7 @@ button:focus {
 
 #Home .text-container .home-text {
   font-family: "IBM Plex Sans", sans-serif;
+  text-align: justify;
   width: 280px;
   color: #606060;
   line-height: 1.6;
@@ -756,6 +755,10 @@ button:focus {
   font-size: 22px;
 }
 
+#Projects {
+  text-align: justify;
+}
+
 .project-one .container {
   max-width: 900px;
   width: 100%;
@@ -797,6 +800,41 @@ button:focus {
   float: right;
   display: block;
   height: 100%;
+}
+
+.project-description .project-screenshot img.main-screenshot {
+  object-fit: cover;
+  height: 400px;
+  width: 100%;
+  transition: 0.2s ease-in-out;
+}
+
+.project-description .project-screenshot .new-tab-screenshot {
+  display: block;
+  position: relative;
+  border: 1px solid #262626;
+}
+
+.project-description .project-screenshot .overlay-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: block;
+  top: 0;
+}
+
+.project-description .project-screenshot .overlay-container .overlay-image {
+  position: absolute;
+  height: 50px;
+  top: 10px;
+  right: 10px;
+}
+
+.project-description
+  .project-screenshot
+  .new-tab-screenshot:hover
+  img.main-screenshot {
+  opacity: 0.6;
 }
 
 #Projects .project-tab-one .project-img {
@@ -908,6 +946,7 @@ button:focus {
 /*Project Tabs*/
 .projects-tab .container {
   max-width: 750px;
+  text-align: justify;
 }
 
 .projects-tab .title-image {
@@ -1341,8 +1380,6 @@ input[type="submit"]:hover {
 
   #Home #home-body {
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   #Home .home-body .home-text-header {
@@ -1353,10 +1390,15 @@ input[type="submit"]:hover {
     width: 300px;
   }
 
+  #Home #home-body .home-text p {
+    text-align: justify;
+  }
+
   #Home .text-container .aboutlink {
     float: none;
     padding-top: 20px;
-    margin: auto;
+    margin: 0;
+    width: 100%;
   }
 
   .tab-content #Home .home-body .text-container {
