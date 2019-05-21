@@ -49,6 +49,14 @@ p {
   font-family: "IBM Plex Sans", sans-serif;
 }
 
+li {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+ul.list li {
+  margin-bottom: 10px;
+}
+
 /* Tablet Nav */
 .topnav {
   background-color: #262626;
@@ -944,6 +952,11 @@ button:focus {
 }
 
 /*Project Tabs*/
+.projects-tab .row.prototype-screens img {
+  width: 350px;
+  padding: 15px 0;
+}
+
 .projects-tab .container {
   max-width: 750px;
   text-align: justify;
@@ -973,13 +986,38 @@ button:focus {
   font-size: 30px;
   font-weight: 600;
   text-transform: uppercase;
-  padding: 0 0 20px;
+  padding: 0 0 10px;
+  margin: 0 0 10px;
+  border-bottom: 1px solid #ee383a;
 }
 
 .projects-tab .external-link a {
   display: block;
   width: 200px;
   margin: 20px 0;
+}
+
+.projects-tab .external-link.central-link {
+  text-align: center;
+  width: 100%;
+}
+
+.projects-tab .external-link.central-link a {
+  text-align: center;
+  display: inline-block;
+  width: unset;
+  font-size: 16px;
+}
+
+.projects-tab .image-container {
+  text-align: center;
+}
+.projects-tab .image-container .image-fishman {
+  width: 300px;
+}
+
+.projects-tab .image-container .image-gameplay1 {
+  width: 380px;
 }
 
 #ElectricShare .project-description img.es-gameplay-1 {
