@@ -61,9 +61,6 @@ h3 {
   color: #ee383a;
 }
 
-.site-container {
-  scrollbar-width: 0;
-}
 .site-container .site-title {
   text-align: center;
   font-family: "Nunito Sans", sans-serif, Arial, Helvetica, sans-serif;
@@ -452,7 +449,7 @@ h1.tab-header {
 }
 
 .header-image .connect-img {
-  width: 370px;
+  width: 300px;
   display: block;
   margin: auto;
 }
@@ -512,7 +509,7 @@ h1.tab-header {
 @media screen and (max-width: 767px) {
   .header-image .connect-img {
     width: 100%;
-    max-width: 370px;
+    max-width: 300px;
   }
 
   .connect-container .connect-content {
@@ -524,6 +521,7 @@ h1.tab-header {
 .sketch-box {
   max-width: 90vw;
   margin: auto;
+  padding-bottom: 40px;
 }
 
 .sketch-entry {
@@ -539,9 +537,8 @@ h1.tab-header {
   transform: scale(0.96);
 }
 
-.sketch-entry img:hover {
-  transform: scale(1.02);
-  opacity: 1;
+.sketch-column img:hover {
+  transform: scale(1.04);
   transition: 0.5s cubic-bezier(0.17, 0.897, 0.18, 0.848);
 }
 
@@ -578,6 +575,7 @@ h1.tab-header {
   margin-top: 8px;
   vertical-align: middle;
   width: 100%;
+  transition: 0.5s cubic-bezier(0.17, 0.897, 0.18, 0.848);
 }
 
 @media screen and (max-width: 1200px) {
