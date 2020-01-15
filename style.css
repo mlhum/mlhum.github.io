@@ -367,8 +367,7 @@ h1.tab-header {
 
 .project-container {
   width: 100%;
-  min-height: 400px;
-  height: 30vh;
+  min-height: 270px;
   overflow: hidden;
   position: relative;
   background-color: #23395b;
@@ -390,14 +389,14 @@ h1.tab-header {
 
 .project-container .project-caption {
   position: absolute;
-  bottom: 0;
-  padding: 5vw;
+  bottom: 4vw;
+  left: 4vw;
 }
 
 .project-container .project-caption .project-header {
   color: #fcfdff;
   -webkit-text-stroke: 2px #fcfdff;
-  font-size: 78px;
+  font-size: 58px;
   font-weight: 800;
   font-family: "Open Sans", sans-serif;
   transition: 0.3s ease;
@@ -437,6 +436,19 @@ h1.tab-header {
 
 .project-container:hover .project-caption .project-subheader {
   opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .project-container .project-caption .project-header {
+    color: #fcfdff;
+    -webkit-text-stroke: 2px #fcfdff;
+    font-weight: 700;
+    font-size: 32px;
+  }
+
+  .project-container .project-caption .project-subheader {
+    opacity: 1;
+  }
 }
 
 .connect-container {
