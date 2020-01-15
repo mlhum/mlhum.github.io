@@ -213,15 +213,18 @@ h1.tab-header {
 }
 
 .transition-fast {
-  transition: 0.2s ease-out;
+  transition: 0.8s ease-out;
+  transition-delay: 0;
 }
 
 .transition-medium {
-  transition: 1s ease-out;
+  transition: 0.8s ease-out;
+  transition-delay: 0.15s;
 }
 
 .transition-slow {
-  transition: 1.8s ease-out;
+  transition: 0.8s ease-out;
+  transition-delay: 0.3s;
 }
 
 .jumbotron-container img {
@@ -238,7 +241,7 @@ h1.tab-header {
 @media screen and (max-width: 1400px) {
   .jumbotron-container img {
     width: unset;
-    height: 100%;
+    height: 180%;
   }
 }
 
@@ -292,7 +295,8 @@ h1.tab-header {
 .about h1 {
   margin-bottom: 10px;
   padding-bottom: 5px;
-  color: #ab93ad;
+  transition: 0.5s ease;
+  color: #c5aec7;
   display: inline-block;
   transition: 0.2s ease-out;
   font-family: "Open Sans", sans-serif;
@@ -452,7 +456,6 @@ h1.tab-header {
 }
 
 .connect-container {
-  height: 100vh;
   min-height: 500px;
 }
 
