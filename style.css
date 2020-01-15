@@ -295,10 +295,8 @@ h1.tab-header {
 .about h1 {
   margin-bottom: 10px;
   padding-bottom: 5px;
-  transition: 0.5s ease;
-  color: #c5aec7;
+  color: #ddb4e0;
   display: inline-block;
-  transition: 0.2s ease-out;
   font-family: "Open Sans", sans-serif;
   font-size: 34px;
   font-weight: 600;
@@ -317,8 +315,7 @@ h1.tab-header {
 
 .about .about-image {
   max-width: 360px;
-  opacity: 0.9;
-  transition: 1.4s ease;
+  transition: 2s ease;
 }
 
 .about .view-resume {
