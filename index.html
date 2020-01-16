@@ -21,13 +21,12 @@
                 <h3>UI/UX, Art and Illustration, Game Design</h3>
             </div>
             <ul class="nav nav-tabs">
-                <li><a class="site-nav nav-tab active" href="#Home" data-toggle="tab" onclick="removeActive()">Home</a>
+                <li><a class="site-nav nav-tab active" href="#Home" data-toggle="tab">Home</a>
                 </li>
-                <li><a class="site-nav nav-tab" href="#Portfolio" data-toggle="tab"
-                        onclick="removeActive()">Portfolio</a></li>
-                <li><a class="site-nav nav-tab" href="#Sketches" data-toggle="tab" onclick="removeActive()">Sketches</a>
+                <li><a class="site-nav nav-tab" href="#Portfolio" data-toggle="tab">Portfolio</a></li>
+                <li><a class="site-nav nav-tab" href="#Sketches" data-toggle="tab">Sketches</a>
                 </li>
-                <li><a class="site-nav nav-tab" href="#Connect" data-toggle="tab" onclick="removeActive()">Connect</a>
+                <li><a class="site-nav nav-tab" href="#Connect" data-toggle="tab">Connect</a>
                 </li>
             </ul>
         </div>
@@ -59,7 +58,7 @@
             </div>
             <div class="tab-pane" id="Portfolio">
                 <div class="portfolio-container nav-tabs">
-                    <a data-toggle="tab" href="#ProjectOne" id="tablink" onclick="removeActive()">
+                    <a data-toggle="tab" href="#ProjectOne" class="reset-link tablink1">
                         <div class="project-container">
                             <img src="assets/projects/dominik-mayer-mountain-rox.jpg" class="project-img">
                             <div class="project-caption">
@@ -69,7 +68,7 @@
                             </div>
                         </div>
                     </a>
-                    <a data-toggle="tab" href="#ProjectTwo" onclick="removeActive()">
+                    <a data-toggle="tab" href="#ProjectTwo" class="reset-link tablink2">
                         <div class="project-container">
                             <img src="assets/projects/dominik-mayer-beach-at-night-01.jpg" class="project-img">
                             <div class="project-caption">
@@ -79,12 +78,12 @@
                             </div>
                         </div>
                     </a>
-                    <a data-toggle="tab" href="#ProjectThree" onclick="removeActive()">
+                    <a data-toggle="tab" href="#ProjectThree" class="reset-link tablink3">
                         <div class="project-container">
                             <img src="assets/projects/dominik-mayer-five-headed-beast-x.jpg" class="project-img">
                             <div class="project-caption">
                                 <div class="project-date">Jan '18 - Present</div>
-                                <div class="project-header">GI GAME JAMS</div>
+                                <div class="project-header">SPAGHETTI YETI GAME DESIGNER</div>
                                 <div class="project-subheader">View Project</div>
                             </div>
                         </div>
@@ -111,21 +110,37 @@
                         prototype iteration.<br><br>The work I did there is in its early stages and so will not be
                         published here. Please contact me if you would like to learn more.
                     </p>
-                    <a data-toggle="tab" class="button-link" href="#Portfolio" id="tablink"
-                        onclick="removeActive()">Return to Projects</a>
+                    <a data-toggle="tab" class="button-link reset-link tablink4" href="#Portfolio">Return
+                        to Projects</a>
                 </div>
             </div>
             <div class="tab-pane" id="ProjectTwo">
-                <div>
-                    <h1>Project 2</h1>
+                <div class="project-two project-tab">
+                    <h1 class="project-title">CALLISTO-361</h1>
+                    <p>As a designer at the Sonova Innovation Lab in communitech, I had the amazing opportunity to
+                        start
+                        on some innovative design concepts centered around helping users affected by hearing loss. I
+                        worked on projects from their ideation and problem space understanding to user testing and
+                        prototype iteration.<br><br>The work I did there is in its early stages and so will not be
+                        published here. Please contact me if you would like to learn more.
+                    </p>
+                    <a data-toggle="tab" class="button-link reset-link tablink5" href="#Portfolio">Return
+                        to Projects</a>
                 </div>
-                <a id="tablink" data-toggle="tab" href="#Portfolio" onclick="removeActive()">Return to Projects</a>
             </div>
             <div class=" tab-pane" id="ProjectThree">
-                <div>
-                    <h1>Project 3</h1>
+                <div class="project-three project-tab">
+                    <h1 class="project-title">SPAGHETTI YETI GAME DESIGNER</h1>
+                    <p>As a designer at the Sonova Innovation Lab in communitech, I had the amazing opportunity to
+                        start
+                        on some innovative design concepts centered around helping users affected by hearing loss. I
+                        worked on projects from their ideation and problem space understanding to user testing and
+                        prototype iteration.<br><br>The work I did there is in its early stages and so will not be
+                        published here. Please contact me if you would like to learn more.
+                    </p>
+                    <a data-toggle="tab" class="button-link reset-link tablinky" href="#Portfolio">Return
+                        to Projects</a>
                 </div>
-                <a id="tablink" data-toggle="tab" href="#Portfolio" onclick="removeActive()">Return to Projects</a>
             </div>
             <div class=" tab-pane" id="Sketches">
                 <div class="sketch-box">
@@ -181,10 +196,9 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <script>
-        function removeActive() {
-            var element = document.getElementById("tablink");
-            element.classList.remove("active");
-        }
+        $('a.reset-link').on('click', function () {
+            $(".tablink1,.tablink2,.tablink3,.tablink4,.tablink5,.tablink6").removeClass("active");
+        });
     </script>
 </body>
 
