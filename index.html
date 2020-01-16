@@ -21,13 +21,17 @@
                 <h3>UI/UX, Art and Illustration, Game Design</h3>
             </div>
             <ul class="nav nav-tabs">
-                <li class="active"><a class="nav-tab active" href="#Home" data-toggle="tab">Home</a></li>
-                <li><a class="nav-tab" href="#Portfolio" data-toggle="tab">Portfolio</a></li>
-                <li><a class="nav-tab" href="#Sketches" data-toggle="tab">Sketches</a></li>
-                <li><a class="nav-tab" href="#Connect" data-toggle="tab">Connect</a></li>
+                <li><a class="site-nav nav-tab active" href="#Home" data-toggle="tab" onclick="removeActive()">Home</a>
+                </li>
+                <li><a class="site-nav nav-tab" href="#Portfolio" data-toggle="tab"
+                        onclick="removeActive()">Portfolio</a></li>
+                <li><a class="site-nav nav-tab" href="#Sketches" data-toggle="tab" onclick="removeActive()">Sketches</a>
+                </li>
+                <li><a class="site-nav nav-tab" href="#Connect" data-toggle="tab" onclick="removeActive()">Connect</a>
+                </li>
             </ul>
         </div>
-        <div class="tab-content">
+        <div class="site-tab tab-content">
             <div class="tab-pane active" id="Home">
                 <div class="jumbotron-container">
                     <img src="assets/Home/galaxy-whales-50.png" class="home-jumbotron">
@@ -54,8 +58,8 @@
                 </div>
             </div>
             <div class="tab-pane" id="Portfolio">
-                <div class="portfolio-container">
-                    <a href="#">
+                <div class="portfolio-container nav-tabs">
+                    <a data-toggle="tab" href="#ProjectOne" id="tablink">
                         <div class="project-container">
                             <img src="assets/projects/dominik-mayer-mountain-rox.jpg" class="project-img">
                             <div class="project-caption">
@@ -65,7 +69,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="#">
+                    <a data-toggle="tab" href="#ProjectTwo">
                         <div class="project-container">
                             <img src="assets/projects/dominik-mayer-beach-at-night-01.jpg" class="project-img">
                             <div class="project-caption">
@@ -75,7 +79,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="#">
+                    <a data-toggle="tab" href="#ProjectThree">
                         <div class="project-container">
                             <img src="assets/projects/dominik-mayer-five-headed-beast-x.jpg" class="project-img">
                             <div class="project-caption">
@@ -103,9 +107,31 @@
                             teammates.</p>
                         <a href="#">Systems Design Projects</a>
                     </div>
+
                 </div>
             </div>
-            <div class="tab-pane" id="Sketches">
+            <div class="tab-pane" id="ProjectOne">
+                <div>
+                    <h1>Project 1</h1>
+                </div>
+                <a data-toggle="tab" href="#Portfolio" onclick="removeActive()">Return to Projects</a>
+                <a data-toggle="tab" href="#ProjectTwo" onclick="removeActive()">Next Project</a>
+            </div>
+            <div class=" tab-pane" id="ProjectTwo">
+                <div>
+                    <h1>Project 2</h1>
+                </div>
+                <a data-toggle="tab" href="#Portfolio" onclick="removeActive()">Return to Projects</a>
+                <a data-toggle=" tab" href="#ProjectThree" onclick="removeActive()">Next Project</a>
+            </div>
+            <div class=" tab-pane" id="ProjectThree">
+                <div>
+                    <h1>Project 3</h1>
+                </div>
+                <a data-toggle="tab" href="#Portfolio" onclick="removeActive()">Return to Projects</a>
+                <a data-toggle=" tab" href="#ProjectTwo" onclick="removeActive()">Next Project</a>
+            </div>
+            <div class=" tab-pane" id="Sketches">
                 <div class="sketch-box">
                     <div class="sketch-row">
                         <div class="sketch-column">
@@ -120,23 +146,6 @@
                             <img src="assets/sketches/crane.jpg">
                         </div>
                     </div>
-                    <!--
-                    <div class="sketch-entry">
-                        <img src="assets/sketches/tora.JPG">
-                    </div>
-                    <div class="sketch-entry">
-                        <img src="assets/sketches/mail-birds.JPG">
-                    </div>
-                    <div class="sketch-entry">
-                        <img src="assets/sketches/crane.jpg">
-                    </div>
-                    <div class="sketch-entry">
-                        <img src="assets/sketches/Treantedit.png">
-                    </div>
-                    <div class="sketch-entry">
-                        <img src="assets/sketches/wardens.jpg">
-                    </div>
-                    -->
                 </div>
             </div>
             <div class="tab-pane" id="Connect">
@@ -175,6 +184,12 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script>
+        function removeActive() {
+            var element = document.getElementById("tablink");
+            element.classList.remove("active");
+        }
+    </script>
 </body>
 
 </html>

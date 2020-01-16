@@ -103,7 +103,7 @@ ul.nav.nav-tabs li {
   display: inline-block;
 }
 
-.nav-tab {
+.site-nav.nav-tab {
   text-align: center;
   width: 130px;
   padding: 5px 0;
@@ -119,19 +119,19 @@ ul.nav.nav-tabs li {
   transition: 0.4s ease;
 }
 
-.nav-tab:hover {
+.site-nav.nav-tab:hover {
   color: #ee383a;
   border-bottom: 1px solid #ee383a;
   text-decoration: none;
 }
 
-.nav-tab.active {
+.site-nav.nav-tab.active {
   color: #ee383a;
   border-bottom: 1px solid #ee383a;
   text-decoration: none;
 }
 
-.tab-content {
+.site-tab.tab-content {
   padding-top: 188px;
 }
 
@@ -618,7 +618,7 @@ h1.tab-header {
     padding-bottom: 0;
   }
 
-  .nav-tab {
+  .site-nav.nav-tab {
     width: 100%;
     padding: 16px 0 5px;
     margin: 0;
