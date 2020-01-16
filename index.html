@@ -49,7 +49,7 @@
                                 design, keeping decisions user-focused is my top priority, and I strive to do so in
                                 everything I make. I am always looking for more opportunities to grow.
                             </p>
-                            <a class="view-resume" target="_blank" href="resume-draft-2-2020.pdf">
+                            <a class="button-link" target="_blank" href="resume-draft-2-2020.pdf">
                                 View Resume
                             </a>
                         </div>
@@ -59,7 +59,7 @@
             </div>
             <div class="tab-pane" id="Portfolio">
                 <div class="portfolio-container nav-tabs">
-                    <a data-toggle="tab" href="#ProjectOne" id="tablink">
+                    <a data-toggle="tab" href="#ProjectOne" id="tablink" onclick="removeActive()">
                         <div class="project-container">
                             <img src="assets/projects/dominik-mayer-mountain-rox.jpg" class="project-img">
                             <div class="project-caption">
@@ -69,7 +69,7 @@
                             </div>
                         </div>
                     </a>
-                    <a data-toggle="tab" href="#ProjectTwo">
+                    <a data-toggle="tab" href="#ProjectTwo" onclick="removeActive()">
                         <div class="project-container">
                             <img src="assets/projects/dominik-mayer-beach-at-night-01.jpg" class="project-img">
                             <div class="project-caption">
@@ -79,7 +79,7 @@
                             </div>
                         </div>
                     </a>
-                    <a data-toggle="tab" href="#ProjectThree">
+                    <a data-toggle="tab" href="#ProjectThree" onclick="removeActive()">
                         <div class="project-container">
                             <img src="assets/projects/dominik-mayer-five-headed-beast-x.jpg" class="project-img">
                             <div class="project-caption">
@@ -90,15 +90,6 @@
                         </div>
                     </a>
                     <div class="hidden">
-                        <a href="#">Sonova Innovation Lab</a>
-                        <p>As a designer at the Sonova Innovation Lab in communitech, I had the amazing opportunity to
-                            start
-                            on some innovative design concepts centered around helping users affected by hearing loss. I
-                            worked on projects from their ideation and problem space understanding to user testing and
-                            prototype iteration. The work I did there is in its early stages, so please contact me if
-                            you
-                            would like to learn more.
-                        </p>
                         <a href="#">GI Game Jam</a>
                         <p>Every four months, the University of Waterloo hosts an event in which participating teams
                             have 48
@@ -111,25 +102,30 @@
                 </div>
             </div>
             <div class="tab-pane" id="ProjectOne">
-                <div>
-                    <h1>Project 1</h1>
+                <div class="project-one project-tab">
+                    <h1 class="project-title">Sonova Innovation Lab</h1>
+                    <p>As a designer at the Sonova Innovation Lab in communitech, I had the amazing opportunity to
+                        start
+                        on some innovative design concepts centered around helping users affected by hearing loss. I
+                        worked on projects from their ideation and problem space understanding to user testing and
+                        prototype iteration.<br><br>The work I did there is in its early stages and so will not be
+                        published here. Please contact me if you would like to learn more.
+                    </p>
+                    <a data-toggle="tab" class="button-link" href="#Portfolio" id="tablink"
+                        onclick="removeActive()">Return to Projects</a>
                 </div>
-                <a data-toggle="tab" href="#Portfolio" onclick="removeActive()">Return to Projects</a>
-                <a data-toggle="tab" href="#ProjectTwo" onclick="removeActive()">Next Project</a>
             </div>
-            <div class=" tab-pane" id="ProjectTwo">
+            <div class="tab-pane" id="ProjectTwo">
                 <div>
                     <h1>Project 2</h1>
                 </div>
-                <a data-toggle="tab" href="#Portfolio" onclick="removeActive()">Return to Projects</a>
-                <a data-toggle=" tab" href="#ProjectThree" onclick="removeActive()">Next Project</a>
+                <a id="tablink" data-toggle="tab" href="#Portfolio" onclick="removeActive()">Return to Projects</a>
             </div>
             <div class=" tab-pane" id="ProjectThree">
                 <div>
                     <h1>Project 3</h1>
                 </div>
-                <a data-toggle="tab" href="#Portfolio" onclick="removeActive()">Return to Projects</a>
-                <a data-toggle=" tab" href="#ProjectTwo" onclick="removeActive()">Next Project</a>
+                <a id="tablink" data-toggle="tab" href="#Portfolio" onclick="removeActive()">Return to Projects</a>
             </div>
             <div class=" tab-pane" id="Sketches">
                 <div class="sketch-box">

@@ -23,7 +23,8 @@ h1 {
 p {
   color: #826a86;
   font-family: "Nunito Sans", sans-serif, Arial, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
+  line-height: 30px;
 }
 
 .red:hover {
@@ -304,9 +305,6 @@ h1.tab-header {
 
 .about .about-description {
   max-width: 370px;
-  color: #454556;
-  font-size: 16px;
-  line-height: 34px;
 }
 
 .about .about-text {
@@ -318,8 +316,8 @@ h1.tab-header {
   transition: 2s ease;
 }
 
-.about .view-resume {
-  border: 1px solid #2c2663;
+.button-link {
+  border: 3px solid #ddb4e0;
   color: #2c2663;
   text-transform: uppercase;
   font-weight: 700;
@@ -330,11 +328,11 @@ h1.tab-header {
   transition: 0.5s ease;
 }
 
-.about .view-resume:hover {
+.button-link:hover {
   background-color: #ee383a;
   color: #fcfdff;
   transition: 0.5s ease;
-  border: 1px solid #ee383a;
+  border: 3px solid #ee383a;
   text-decoration: none;
 }
 
@@ -450,6 +448,19 @@ h1.tab-header {
   .project-container .project-caption .project-subheader {
     opacity: 1;
   }
+}
+
+.project-tab {
+  margin: auto;
+  width: 80%;
+  max-width: 1200px;
+}
+
+.project-title {
+  font-size: 50px;
+  margin: 30px 30px 40px;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
 }
 
 .connect-container {
