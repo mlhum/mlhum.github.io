@@ -86,7 +86,7 @@ h3 {
 .nav-container {
   padding: 60px 0 15px;
   position: fixed;
-  z-index: 1;
+  z-index: 999;
   width: 100%;
   background-image: url("assets/WHITE-BLUE.PNG");
   background-repeat: repeat;
@@ -205,12 +205,55 @@ h1.tab-header {
   font-size: 75px;
   font-weight: 800;
   color: transparent;
-  line-height: 1;
-  padding: 5vw;
-  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin: auto;
+  opacity: 0.8;
   text-transform: uppercase;
   font-family: "Open Sans", sans-serif;
   -webkit-text-stroke: 1px #2c2663;
+  z-index: 2;
+  top: 40%;
+}
+
+.jumbotron-white-line {
+  position: absolute;
+  height: 100%;
+  width: 1px;
+  background-color: #fcfdff;
+  z-index: 1;
+}
+
+.jumbotron-white-line.left {
+  left: 40%;
+}
+
+.jumbotron-white-line.hard-left {
+  left: 20%;
+}
+
+.jumbotron-white-line.right {
+  right: 40%;
+}
+
+.jumbotron-white-line.hard-right {
+  right: 20%;
+}
+
+@media screen and (max-width: 900px) {
+  .jumbotron-white-line.hard-right {
+    right: 33%;
+  }
+  .jumbotron-white-line.hard-left {
+    left: 33%;
+  }
+  .jumbotron-white-line.left {
+    display: none;
+  }
+  .jumbotron-white-line.right {
+    display: none;
+  }
 }
 
 .transition-fast {
@@ -463,6 +506,12 @@ h1.tab-header {
   text-align: center;
 }
 
+@media screen and (max-width: 500px) {
+  .project-title {
+    font-size: 30px;
+  }
+}
+
 .connect-container {
   min-height: 500px;
 }
@@ -649,6 +698,6 @@ h1.tab-header {
   }
 
   .project-container .project-caption .project-header {
-    font-size: 50px;
+    font-size: 45px;
   }
 }
