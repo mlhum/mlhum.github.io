@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Amarante&display=swap");
 
 body {
   background-image: url("assets/WHITE-BLUE.PNG");
@@ -55,11 +57,19 @@ a {
 }
 
 h2 {
-  color: #62bbc1;
+  color: #824396;
+}
+
+.center {
+  text-align: center;
 }
 
 h3 {
   color: #826a86;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
 }
 
 .opacity-med {
@@ -99,6 +109,7 @@ h3 {
   background-image: url("assets/WHITE-BLUE.PNG");
   background-repeat: repeat;
   background-size: 600px;
+  opacity: 0.9;
 }
 
 .nav.nav-tabs {
@@ -229,7 +240,7 @@ h1.tab-header {
   position: absolute;
   height: 100%;
   width: 1px;
-  background-color: #e9e9e9;
+  background-color: #fcfdff;
   z-index: 1;
 }
 
@@ -518,12 +529,91 @@ h1.tab-header {
   text-align: center;
 }
 
+.project-title.project-sub {
+  margin-bottom: 10px;
+}
+
+.project-tab.full-screen-project {
+  width: 100%;
+  max-width: unset;
+}
+
+.full-screen-project p {
+  max-width: 800px;
+  margin: auto;
+  display: block;
+}
+
 .project-tab .spaghetti-yeti-project-img {
   width: 100%;
   min-width: 350px;
-  margin: auto;
   max-width: 750px;
+  margin: auto;
   display: block;
+}
+
+.game-container {
+  padding: 30px 0;
+}
+
+.game-container.lizard-wizard {
+  background-color: #793694;
+}
+
+.game-container.lizard-wizard h1 {
+  color: #fcfdff;
+  font-family: "Amarante", cursive;
+}
+
+.game-container.lizard-wizard h3 {
+  color: #fcfdff;
+}
+
+.game-container.electric-share {
+  background-color: #dfe973;
+}
+
+.game-container.electric-share h1 {
+  color: #618463;
+  font-family: "Lobster", cursive;
+  font-size: 50px;
+}
+
+.game-container.electric-share h3 {
+  color: #618463;
+}
+
+.game-container.hj-construction {
+  background-color: #ee383a;
+}
+
+.game-container.hj-construction h1 {
+  color: #781d1e;
+}
+
+.game-container.hj-construction h3 {
+  color: #781d1e;
+}
+
+.jawg-logo {
+  max-width: 300px;
+  width: 100%;
+  margin: auto;
+  display: block;
+}
+
+.project-tab .gameplay {
+  min-width: 350px;
+  max-width: 600px;
+  width: 100%;
+  display: block;
+  margin: auto;
+  padding: 30px 0;
+}
+
+.project-footer {
+  padding: 30px;
+  text-align: center;
 }
 
 @media screen and (max-width: 500px) {
