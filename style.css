@@ -109,7 +109,6 @@ h3 {
   background-image: url("assets/WHITE-BLUE.PNG");
   background-repeat: repeat;
   background-size: 600px;
-  opacity: 0.9;
 }
 
 .nav.nav-tabs {
@@ -497,6 +496,10 @@ h1.tab-header {
 
 .project-container:hover .project-caption .project-subheader {
   opacity: 1;
+}
+
+.callisto-main {
+  width: 100%;
 }
 
 @media screen and (max-width: 768px) {
