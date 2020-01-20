@@ -46,7 +46,8 @@
                 <div class="about-container">
                     <div class="about">
                         <div class="about-text">
-                            <h1><span class="transition-fast">About</span><span class="transition-slow"> Me</span></h1>
+                            <h1><span class="transition-fast">About</span><span class="transition-slow"> Me</span>
+                            </h1>
                             <p class="about-description">I'm an aspiring UI/UX designer and artist. I study
                                 Systems Design engineering at uWaterloo.<br>I aim to create
                                 clean, minimalistic designs that are both beautiful and accessible for its
@@ -54,7 +55,8 @@
                                 <br><br>
                                 My current goals are to be a better designer, read more fiction novels, and to get
                                 better
-                                at board games. I am currently seeking a summer internship where I can hopefully further
+                                at board games. I am currently seeking a summer internship where I can hopefully
+                                further
                                 one or two of these.
                             </p>
                             <a class="button-link" target="_blank" href="resume-draft-2-2020.pdf">
@@ -105,8 +107,10 @@
                     <h1 class="project-title">Sonova Innovation Lab</h1>
                     <p class="small-paragraph">As a designer at the Sonova Innovation Lab in communitech, I had the
                         amazing opportunity to starton some innovative design concepts centered around helping users
-                        affected by hearing loss. I worked on projects from the very beginning ideation stages to user
-                        testing and prototype iteration.<br><br>The work I did there is still in its early stages, and
+                        affected by hearing loss. I worked on projects from the very beginning ideation stages to
+                        user
+                        testing and prototype iteration.<br><br>The work I did there is still in its early stages,
+                        and
                         thus cannot be published publicly on this website. If you are interested in learning more,
                         please contact me at <a class="link"
                             href="mailto:marcus.hum11@gmail.com">marcus.hum11@gmail.com</a>.
@@ -130,9 +134,11 @@
                 <div class="project-three project-tab full-screen-project">
                     <div class="game-container">
                         <img class="spaghetti-yeti-project-img" src="assets/projects/Project-Spaghetti/all-stars.png">
-                        <p>Every four months, the University of Waterloo hosts an event called the GI Game Jam in which
+                        <p>Every four months, the University of Waterloo hosts an event called the GI Game Jam in
+                            which
                             participating teams have 48 hours to create a game. These are the games I have created
-                            together with my incredibly scrappy teammates. My role within the team is the game designer
+                            together with my incredibly scrappy teammates. My role within the team is the game
+                            designer
                             and character artist.</p>
                     </div>
                     <div class="game-container electric-share">
@@ -157,7 +163,7 @@
                         <img class="gameplay" src="assets/projects/Project-Spaghetti/hj-gameplay.png">
                     </div>
                     <div class="project-footer">
-                        <a data-toggle="tab" class="button-link reset-link tablink6 href=" #Portfolio">Return
+                        <a data-toggle="tab" class="button-link reset-link tablink6" href="#Portfolio">Return
                             to Projects</a>
                     </div>
                 </div>
@@ -218,6 +224,27 @@
     <script>
         $('a.reset-link').on('click', function () {
             $(".tablink1,.tablink2,.tablink3,.tablink4,.tablink5,.tablink6").removeClass("active");
+        });
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $('a[href*="#"]')
+            .not('[href="#"]')
+            .not('[href="#0"]')
+        $(document).ready(function () {
+            $("a").on('click', function (event) {
+
+                if (this.hash !== "") {
+
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 600, function () {
+                        window.location.hash = hash;
+                    });
+                }
+            });
         });
     </script>
 </body>

@@ -150,7 +150,11 @@ ul.nav.nav-tabs li {
   text-decoration: none;
 }
 
-.site-tab.tab-content {
+.tab-padding {
+  padding-top: 188px;
+}
+
+.tab-pane {
   padding-top: 188px;
 }
 
