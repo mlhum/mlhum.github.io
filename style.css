@@ -43,6 +43,7 @@ p {
   font-family: "Nunito Sans", sans-serif, Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 30px;
+  margin-bottom: 2rem;
 }
 
 a.link {
@@ -55,6 +56,10 @@ a.link:hover {
 
 .red:hover {
   color: #ee383a;
+}
+
+.section-padding {
+  padding: 20px;
 }
 
 p.quote {
@@ -408,6 +413,7 @@ h1.tab-header {
 
 .about .about-text {
   float: left;
+  padding-bottom: 40px;
 }
 
 .about .about-image {
@@ -581,6 +587,12 @@ h1.tab-header {
 .jumbotron-container:hover .callisto-jumbotron img {
   transform: scale(1);
   transition: 2s cubic-bezier(0.17, 0.897, 0.18, 0.848);
+}
+
+@media screen and (max-width: 770px) {
+  .jumbotron-container .jumbotron-caption.callisto-caption h1 {
+    font-size: 60px;
+  }
 }
 
 .jumbotron-caption.callisto-caption {
