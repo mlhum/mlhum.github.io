@@ -48,12 +48,13 @@ h2 {
   font-size: 20px;
   color: #826a86;
   letter-spacing: 2px;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .content-max-width {
-  max-width: 1000px;
   margin: auto;
+  padding: 0 20px;
+  max-width: 1040px;
 }
 
 p {
