@@ -29,13 +29,31 @@ h3.passion {
   font-size: 28px;
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
 h1 {
   color: #2c2663;
   font-family: "Nunito Sans", sans-serif, Arial, Helvetica, sans-serif;
   font-size: 17px;
+  margin: 25px 0;
   text-transform: uppercase;
   font-weight: 800;
   letter-spacing: 2px;
+}
+
+h2 {
+  margin: 40px 0 15px;
+  font-size: 20px;
+  color: #826a86;
+  letter-spacing: 2px;
+  font-weight: 300;
+}
+
+.content-max-width {
+  max-width: 1000px;
+  margin: auto;
 }
 
 p {
@@ -59,7 +77,9 @@ a.link:hover {
 }
 
 .section-padding {
-  padding: 20px;
+  max-width: 1040px;
+  margin: auto;
+  padding: 0 20px;
 }
 
 p.quote {
@@ -67,7 +87,7 @@ p.quote {
   font-size: 21px;
   color: #2c2663;
   font-weight: 600;
-  padding: 20px;
+  padding: 30px 20px;
 }
 
 .red-divider {
@@ -88,10 +108,6 @@ a {
 
 .white {
   color: #fcfdff;
-}
-
-h2 {
-  color: #824396;
 }
 
 .center {
@@ -136,11 +152,10 @@ h3 {
 }
 
 .nav-container {
-  padding: 15px 0 15px;
   position: fixed;
   z-index: 999;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .nav.nav-tabs {
@@ -419,6 +434,7 @@ h1.tab-header {
 .about .about-image {
   max-width: 360px;
   transition: 2s ease;
+  float: right;
 }
 
 .button-link {
@@ -620,7 +636,7 @@ h1.tab-header {
 }
 
 .full-screen-project p {
-  max-width: 800px;
+  max-width: 1000px;
   margin: auto;
   display: block;
 }
@@ -676,6 +692,18 @@ h1.tab-header {
   color: #781d1e;
 }
 
+.callisto-images {
+  padding-bottom: 15px;
+}
+
+.callisto-iteration h1 {
+  margin: 40px 0 15px;
+}
+
+.callisto-iteration p {
+  padding-bottom: 15px;
+}
+
 .jawg-logo {
   max-width: 300px;
   width: 100%;
@@ -693,8 +721,28 @@ h1.tab-header {
 }
 
 .project-footer {
-  padding: 30px;
+  padding-bottom: 30px;
   text-align: center;
+}
+
+.callisto-iteration img {
+  max-width: 100%;
+  height: 360px;
+  margin: 10px 5px 0 0;
+}
+
+.callisto-iteration .learnings {
+  font-weight: 300;
+  font-size: 18px;
+  letter-spacing: 2px;
+  color: #2c2663;
+}
+
+.callisto-iteration .learnings li {
+  line-height: 34px;
+}
+
+.callisto-iteration .first-iteration p {
 }
 
 @media screen and (max-width: 500px) {
