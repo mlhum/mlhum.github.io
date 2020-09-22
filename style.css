@@ -224,7 +224,7 @@ ul.nav.nav-tabs li {
   padding-top: 97px;
 }
 
-.container {
+.tab-container {
       min-height: calc(100vh - 97px - 48px);
 }
 
@@ -520,9 +520,17 @@ h1.tab-header {
   }
 }
 
+@media screen and (max-width: 1296px) {
+    .portfolio-container.tab-container{
+        margin-left: 48px;
+        margin-right: 48px;
+    }
+}
+
 .portfolio-container {
-  max-width: 90vw;
-  margin: auto;
+  margin-left: auto;
+ margin-right: auto;
+    max-width: 1200px;
 }
 
 .project-container {
@@ -614,6 +622,11 @@ h1.tab-header {
     font-weight: 800;
     font-size: 32px;
   }
+    
+    .portfolio-container.tab-container{
+        margin-left: 24px;
+        margin-right: 24px;
+    }
     
 .project-container:hover .project-caption .project-header {
   color: #fcfdff;
@@ -895,9 +908,8 @@ h1.tab-header {
 }
 
 .sketch-box {
-  margin: auto;
   padding: 0 48px 48px;
-    width: 100%;
+  width: 100%;
 }
 
 .sketch-entry {
@@ -929,45 +941,12 @@ h1.tab-header {
 }
 
 .sketch-row {
-  display: flex;
   flex-wrap: wrap;
-  padding: 0 4px;
-}
-
-.sketch-column {
-  flex: 33%;
-  max-width: 33%;
-  padding: 0 4px;
-}
-
-.sketch-column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
-  transition: 0.5s cubic-bezier(0.17, 0.897, 0.18, 0.848);
-}
-
-@media screen and (max-width: 1200px) {
-  .sketch-column {
-    flex: 50%;
-    max-width: 50%;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .sketch-column {
-    flex: 100%;
-    max-width: 100%;
-  }
-
-  .sketch-column img {
-    margin-top: 40px;
-  }
 }
 
 /*MOBILE VERSION*/
 @media screen and (max-width: 767px) {
-    .container {
+    .tab-container {
       min-height: calc(100vh - 67px - 39px);
 }
   ul.nav.nav-tabs li {
