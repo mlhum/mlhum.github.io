@@ -41,14 +41,14 @@ h1 {
   color: #2c2663;
   font-family: "Nunito Sans", sans-serif, Arial, Helvetica, sans-serif;
   font-size: 17px;
-  margin: 25px 0;
+  margin: 24px 0;
   text-transform: uppercase;
   font-weight: 800;
   letter-spacing: 2px;
 }
 
 h2 {
-  margin: 40px 0 15px;
+  margin: 36px 0 16px;
   font-size: 20px;
   color: #826a86;
   letter-spacing: 2px;
@@ -57,7 +57,7 @@ h2 {
 
 .content-max-width {
   margin: auto;
-  padding: 0 20px;
+  padding: 0 24px;
   max-width: 1040px;
 }
 
@@ -65,8 +65,8 @@ p {
   color: #826a86;
   font-family: "Nunito Sans", sans-serif, Arial, Helvetica, sans-serif;
   font-size: 16px;
-  line-height: 30px;
-  margin-bottom: 2rem;
+  line-height: 26px;
+  margin-bottom: 24px;
 }
 
 a.link {
@@ -92,7 +92,7 @@ p.quote {
   font-size: 21px;
   color: #2c2663;
   font-weight: 600;
-  padding: 30px 20px;
+  padding: 36px 24px;
 }
 
 .red-divider {
@@ -160,7 +160,7 @@ h3 {
   position: fixed;
   z-index: 999;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .nav.nav-tabs {
@@ -207,7 +207,7 @@ ul.nav.nav-tabs li {
 }
 
 .tab-pane {
-  padding-top: 90px;
+  padding-top: 97px;
 }
 
 .tab-pane.active {
@@ -222,6 +222,18 @@ h1.tab-header {
   letter-spacing: 3px;
   text-transform: lowercase;
   padding: 5px 0 20px;
+}
+
+.footer {
+    padding: 12px; 
+    background-color: #23395b;
+      font-family: "Nunito Sans", sans-serif, Arial, Helvetica, sans-serif;
+}
+
+.footer-text {
+    text-align: center;
+    color: #fcfdff;
+    font-size: 16px;
 }
 
 @keyframes slide-down {
@@ -274,10 +286,6 @@ h1.tab-header {
   color: #2c2663;
 }
 
-.jumbotron-contaienr:hover .jumbotron-caption .outline-text .sub-text {
-  color: #ee383a;
-}
-
 .jumbotron-container .jumbotron-caption {
   position: absolute;
   font-size: 75px;
@@ -293,6 +301,10 @@ h1.tab-header {
   -webkit-text-stroke: 1px #2c2663;
   z-index: 2;
   top: 40%;
+}
+
+.jumbotron-container .jumbotron-caption .outline-text {
+    height: 100%;
 }
 
 .jumbotron-white-line {
@@ -373,17 +385,14 @@ h1.tab-header {
 @media screen and (max-width: 768px) {
   .jumbotron-container img {
     width: unset;
-    height: 1000px;
+    height: 1200px;
   }
 
   .jumbotron-container .jumbotron-caption {
-    position: absolute;
-    font-size: 75px;
+    font-size: 60px;
     font-weight: 800;
     color: #2c2663;
     opacity: 0.8;
-    line-height: 1;
-    padding: 5vw;
     bottom: 40%;
     width: 100%;
     text-align: center;
@@ -394,51 +403,36 @@ h1.tab-header {
 }
 
 .about-container {
-  height: calc(100vh - 100px);
+  height: calc(75vh - 100px);
 }
 
 .about-container .about {
-  padding: 80px 40px 40px;
-  max-width: 940px;
+  padding-left: 48px;
+    padding-right: 48px;
+  max-width: 1000px;
   text-align: left;
   margin: auto;
 }
 
-.about-container:hover .about h1 {
+.about h1.about-header {
   color: #2c2663;
-}
-
-.about-container:hover .about .red {
-  color: #ee383a;
-}
-
-.about-container:hover .about-image {
-  transform: scale(1.05);
-  transition: 1.4s ease;
-}
-
-.about h1 {
-  margin-bottom: 10px;
-  padding-bottom: 5px;
-  color: #ddb4e0;
-  display: inline-block;
+    text-align: center;
   font-family: "Open Sans", sans-serif;
   font-size: 34px;
   font-weight: 600;
-}
-
-.about .about-description {
-  max-width: 370px;
+    margin-top: 0;
+    margin-bottom: 48px;
 }
 
 .about .about-text {
   float: left;
-  padding-bottom: 40px;
+    max-width: 50%;
+    padding-right: 48px;
 }
 
 .about .about-image {
-  max-width: 360px;
-  transition: 2s ease;
+  max-width: 50%;
+    padding-left: 48px;
   float: right;
 }
 
@@ -462,30 +456,44 @@ h1.tab-header {
   text-decoration: none;
 }
 
-@media screen and (max-width: 768px) {
-  .about .about-description {
-    max-width: 325px;
-  }
+@media screen and (max-width: 68px) {
 
-  .about h1 {
-    color: #2c2663;
-  }
-
+    .about h1.about-header {
+        margin-bottom: 24px;
+    }
+    
+    .about .about-text {
+        max-width: none;
+        padding-right: 0;
+        float: none;
+    }
+    
+    .about-container {
+        height: unset;
+        padding: 0 12px 48px;
+    }
+    
+    .about-container .about {
+        padding: 24px
+    }
+    
   .about .about-image {
-    height: 550px;
-    max-width: unset;
+      float: none;
+      padding-left: 0;
+      max-width: 100%;
   }
+    
+    .about .button-link {
+        margin-bottom: 24px;
+    }
 }
 
 @media screen and (max-width: 902px) {
   .about .about-image {
-    height: 530px;
-    max-width: unset;
   }
 }
 
 .portfolio-container {
-  padding-top: 20px;
   max-width: 90vw;
   margin: auto;
 }
@@ -496,7 +504,7 @@ h1.tab-header {
   overflow: hidden;
   position: relative;
   background-color: #23395b;
-  margin-bottom: 40px;
+  margin-bottom: 48px;
 }
 
 .project-container .project-img {
@@ -515,7 +523,8 @@ h1.tab-header {
 .project-container .project-caption {
   position: absolute;
   bottom: 4vw;
-  left: 4vw;
+  padding-left: 4vw;
+    padding-right: 16px;
 }
 
 .project-container .project-caption .project-header {
@@ -574,10 +583,14 @@ h1.tab-header {
 @media screen and (max-width: 768px) {
   .project-container .project-caption .project-header {
     color: #fcfdff;
-    -webkit-text-stroke: 2px #fcfdff;
-    font-weight: 700;
+    -webkit-text-stroke: unset;
+    font-weight: 800;
     font-size: 32px;
   }
+    
+.project-container:hover .project-caption .project-header {
+  color: #fcfdff;
+}
 
   .project-container .project-caption .project-subheader {
     opacity: 1;
@@ -588,6 +601,10 @@ h1.tab-header {
   margin: auto;
   width: 80%;
   max-width: 1000px;
+}
+
+#ProjectOne {
+      height: calc(100vh - 48px);
 }
 
 .project-tab.project-one {
@@ -745,7 +762,8 @@ h1.tab-header {
 }
 
 .project-footer {
-  padding-bottom: 30px;
+    padding-top: 24px;
+  padding-bottom: 24px;
   text-align: center;
 }
 
@@ -776,7 +794,7 @@ h1.tab-header {
 }
 
 .connect-container {
-  min-height: 500px;
+  height: calc(100vh - 97px - 48px);
 }
 
 .header-image {
@@ -854,25 +872,18 @@ h1.tab-header {
 }
 
 .sketch-box {
-  max-width: 90vw;
   margin: auto;
-  padding-bottom: 40px;
+  padding: 0 48px 48px;
+    width: 100%;
 }
 
 .sketch-entry {
   width: 50%;
-  float: left;
-}
-
-.sketch-entry img {
-  width: 100%;
-  padding: 5px;
   transition: 0.3s ease-out;
-  opacity: 0.8;
   transform: scale(0.96);
 }
 
-.sketch-column img:hover {
+.sketch-entry:hover {
   transform: scale(1.04);
   transition: 0.5s cubic-bezier(0.17, 0.897, 0.18, 0.848);
 }
@@ -936,6 +947,10 @@ h1.tab-header {
   ul.nav.nav-tabs li {
     width: 24%;
   }
+    
+    .tab-pane {
+        padding-top: 67px;
+    }
 
   .nav-container {
     padding-bottom: 0;
@@ -943,24 +958,38 @@ h1.tab-header {
 
   .site-nav.nav-tab {
     width: 100%;
-    padding: 16px 0 5px;
+    padding: 12px 0 12px;
     margin: 0;
   }
 
   .nav.nav-tabs {
+      padding-top: 0;
     padding-bottom: 0;
   }
 
+    .sketch-box {
+        padding: 0;
+    }
+    
   .sketch-entry {
     width: 100%;
   }
 
+    .project-container {
+        min-height: 180px;
+        margin-bottom: 24px;
+    }
   .project-container .project-img {
     width: unset;
     height: 200%;
   }
 
   .project-container .project-caption .project-header {
-    font-size: 45px;
+    font-size: 28px;
+      letter-spacing: 2px;
   }
+    
+    .project-container .project-caption .project-subheader {
+        display: none;
+    }
 }
