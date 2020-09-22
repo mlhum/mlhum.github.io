@@ -13,10 +13,24 @@
   font-weight: 600;
 }
 
+.sub-text.mobile {
+    display: none;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: none;
+}
+
 body {
   background-image: url("assets/WHITE-BLUE.PNG");
   background-repeat: repeat;
   background-size: 600px;
+overflow-y: scroll; /* Add the ability to scroll */
+-ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+body::-webkit-scrollbar {
+    display:none;
 }
 
 .hidden {
@@ -210,6 +224,10 @@ ul.nav.nav-tabs li {
   padding-top: 97px;
 }
 
+.container {
+      min-height: calc(100vh - 97px - 48px);
+}
+
 .tab-pane.active {
   animation: slide-down-delay 0.6s ease;
   display: block;
@@ -389,7 +407,7 @@ h1.tab-header {
   }
 
   .jumbotron-container .jumbotron-caption {
-    font-size: 60px;
+    font-size: 48px;
     font-weight: 800;
     color: #2c2663;
     opacity: 0.8;
@@ -398,8 +416,17 @@ h1.tab-header {
     text-align: center;
     text-transform: uppercase;
     font-family: "Open Sans", sans-serif;
-    transition: 0s;
+    transition: 0.2s;
   }
+    
+    .jumbotron-container .sub-text.web {
+        font-size: 24px;
+        display: none;
+    }
+    
+    .jumbotron-container .sub-text.mobile {
+        display: block;
+    }
 }
 
 .about-container {
@@ -470,11 +497,11 @@ h1.tab-header {
     
     .about-container {
         height: unset;
-        padding: 0 12px 48px;
+        padding: 0 12px 36px;
     }
     
     .about-container .about {
-        padding: 24px
+        padding: 0 12px;
     }
     
   .about .about-image {
@@ -604,7 +631,7 @@ h1.tab-header {
 }
 
 #ProjectOne {
-      height: calc(100vh - 48px);
+    min-height: calc(100vh - 48px);
 }
 
 .project-tab.project-one {
@@ -793,10 +820,6 @@ h1.tab-header {
   }
 }
 
-.connect-container {
-  height: calc(100vh - 97px - 48px);
-}
-
 .header-image {
   margin: auto;
 }
@@ -818,7 +841,7 @@ h1.tab-header {
   display: inline-block;
 }
 
-.connect-container .connect-content a:hover {
+.` .connect-content a:hover {
   color: #ee383a;
   text-decoration: none;
 }
@@ -944,9 +967,16 @@ h1.tab-header {
 
 /*MOBILE VERSION*/
 @media screen and (max-width: 767px) {
+    .container {
+      min-height: calc(100vh - 67px - 39px);
+}
   ul.nav.nav-tabs li {
     width: 24%;
   }
+    
+    .footer .footer-text {
+        font-size: 10px;
+    }
     
     .tab-pane {
         padding-top: 67px;
