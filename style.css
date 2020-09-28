@@ -222,6 +222,7 @@ ul.nav.nav-tabs li {
 
 .tab-pane {
   padding-top: 97px;
+    min-height: calc(100vh - 48px);
 }
 
 .tab-container {
@@ -643,10 +644,6 @@ h1.tab-header {
   max-width: 1000px;
 }
 
-#ProjectOne {
-    min-height: calc(100vh - 48px);
-}
-
 .project-tab.project-one {
   max-width: 768px;
 }
@@ -902,6 +899,7 @@ h1.tab-header {
     width: 100%;
     max-width: 300px;
   }
+}
 
 .sketch-box {
   padding: 0 48px 48px;
@@ -919,13 +917,13 @@ h1.tab-header {
   transition: 0.5s cubic-bezier(0.17, 0.897, 0.18, 0.848);
 }
 
-@media screen and (max-width: 1024px) {
-  .sketch-entry img {
+@media screen and (max-width: 767px) {
+  .sketch-entry {
     opacity: 1;
     transform: scale(1);
   }
 
-  .sketch-entry img:hover {
+  .sketch-entry:hover {
     transform: none;
   }
 }
@@ -944,7 +942,7 @@ h1.tab-header {
 @media screen and (max-width: 767px) {
     .tab-container {
       min-height: calc(100vh - 67px - 39px);
-}
+    }
   ul.nav.nav-tabs li {
     width: 24%;
   }
@@ -978,6 +976,7 @@ h1.tab-header {
     
   .sketch-entry {
     width: 100%;
+    padding: 12px 24px;
   }
 
     .project-container {
