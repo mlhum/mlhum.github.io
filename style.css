@@ -62,7 +62,7 @@ h1 {
 }
 
 h2 {
-  margin: 36px 0 16px;
+  margin: 32px 0 16px;
   font-size: 20px;
   color: #826a86;
   letter-spacing: 2px;
@@ -98,7 +98,7 @@ a.link:hover {
 .section-padding {
   max-width: 1040px;
   margin: auto;
-  padding: 0 20px;
+  padding: 0 24px;
 }
 
 p.quote {
@@ -106,7 +106,7 @@ p.quote {
   font-size: 21px;
   color: #2c2663;
   font-weight: 600;
-  padding: 36px 24px;
+  padding: 32px 24px;
 }
 
 .red-divider {
@@ -178,7 +178,7 @@ h3 {
 }
 
 .nav.nav-tabs {
-  padding: 15px 0 15px;
+  padding: 16px 0 16px;
   text-align: center;
   display: block;
   border-bottom: none;
@@ -191,7 +191,7 @@ ul.nav.nav-tabs li {
 .site-nav.nav-tab {
   text-align: center;
   width: 130px;
-  padding: 5px 0;
+  padding: 6px 0;
   margin: 0 5px;
   display: block;
   color: #2c2663;
@@ -652,8 +652,8 @@ h1.tab-header {
 }
 
 .project-title {
-  font-size: 45px;
-  margin: 30px 30px 40px;
+  font-size: 42px;
+  margin: 0 0 24px;
   font-family: "Open Sans", sans-serif;
   text-align: center;
 }
@@ -667,9 +667,9 @@ h1.tab-header {
   transition: 2s cubic-bezier(0.17, 0.897, 0.18, 0.848);
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 768px) {
   .jumbotron-container .jumbotron-caption.callisto-caption h1 {
-    font-size: 60px;
+    font-size: 48px;
   }
 }
 
@@ -802,8 +802,6 @@ h1.tab-header {
 }
 
 .project-footer {
-    padding-top: 24px;
-  padding-bottom: 24px;
   text-align: center;
 }
 
@@ -829,7 +827,7 @@ h1.tab-header {
 
 @media screen and (max-width: 500px) {
   .project-title {
-    font-size: 30px;
+    font-size: 28px;
   }
 }
 
@@ -865,22 +863,26 @@ h1.tab-header {
 }
 
 .connect-container .connect-content .email {
-  padding-top: 20px;
+  padding-top: 24px;
+}
+
+.connect-container .connect-content a:hover {
+        text-decoration: none;
+    color: #ee383a;
 }
 
 .connect-container .connect-content p {
-  font-size: 15px;
+  font-size: 16px;
   margin-bottom: 0px;
 }
 
 .connect-container .connect-content .email a {
-  font-size: 20px;
-  width: 250px;
+  font-size: 24px;
 }
 
 .connect-container .connect-content .connect-links {
   padding: 20px 0;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .connect-container .connect-content .connect-links a {
@@ -900,12 +902,6 @@ h1.tab-header {
     width: 100%;
     max-width: 300px;
   }
-
-  .connect-container .connect-content {
-    width: 100%;
-    padding-left: 4vw;
-  }
-}
 
 .sketch-box {
   padding: 0 48px 48px;
