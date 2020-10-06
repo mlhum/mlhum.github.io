@@ -55,18 +55,17 @@ h1 {
   color: #2c2663;
   font-family: "Nunito Sans", sans-serif, Arial, Helvetica, sans-serif;
   font-size: 17px;
-  margin: 24px 0;
+  margin: 24px 0 16px;
   text-transform: uppercase;
   font-weight: 800;
   letter-spacing: 2px;
 }
 
 h2 {
-  margin: 32px 0 16px;
-  font-size: 20px;
+  margin: 16px 0 16px;
+  font-size: 17px;
   color: #826a86;
-  letter-spacing: 2px;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .content-max-width {
@@ -147,6 +146,25 @@ h3 {
 
 .scarlett {
   color: #ee383a;
+}
+
+.return-button {
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 1;
+    text-align: center;
+    padding: 6px;
+    margin: 36px;
+    right: 0;
+}
+
+.collant {
+    position: fixed;
+}
+
+.return-button img {
+    width: 36px;
+    height: 36px;
 }
 
 .site-container .site-title {
@@ -498,7 +516,7 @@ h1.tab-header {
     
     .about-container {
         height: unset;
-        padding: 0 12px 36px;
+        padding: 0 12px 72px;
     }
     
     .about-container .about {
@@ -512,7 +530,7 @@ h1.tab-header {
   }
     
     .about .button-link {
-        margin-bottom: 24px;
+        margin-bottom: 48px;
     }
 }
 
@@ -541,6 +559,20 @@ h1.tab-header {
   position: relative;
   background-color: #23395b;
   margin-bottom: 48px;
+}
+
+.project-info {
+    border-top: 1px solid #5AB1BB;
+    border-bottom: 1px solid #5AB1BB;
+    padding: 12px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #866C8F;
+}
+
+.project-prop {
+    display: inline-block;
+    padding: 0 8px;
 }
 
 .project-container .project-img {
@@ -613,7 +645,7 @@ h1.tab-header {
 }
 
 .section-container {
-  transform: translateY(-45px);
+  transform: translateY(-60px);
 }
 
 @media screen and (max-width: 768px) {
@@ -708,59 +740,8 @@ h1.tab-header {
   display: block;
 }
 
-.game-container {
-  padding: 30px 0;
-}
-
-.game-container.lizard-wizard {
-  background-color: #793694;
-}
-
-.game-container.lizard-wizard h1 {
-  color: #fcfdff;
-  font-family: "Amarante", cursive;
-}
-
-.game-container.lizard-wizard h3 {
-  color: #fcfdff;
-}
-
-.game-container.electric-share {
-  background-color: #dfe973;
-}
-
-.game-container.electric-share h1 {
-  color: #618463;
-  font-family: "Lobster", cursive;
-  font-size: 50px;
-}
-
-.game-container.electric-share h3 {
-  color: #618463;
-}
-
-.game-container.hj-construction {
-  background-color: #ee383a;
-}
-
-.game-container.hj-construction h1 {
-  color: #781d1e;
-}
-
-.game-container.hj-construction h3 {
-  color: #781d1e;
-}
-
-.game-container.rat {
-  background-color: #52595d;
-}
-
-.game-container.rat h1 {
-  color: #fcfdff;
-}
-
-.game-container.rat h3 {
-  color: #9cbda6;
+.bottom-padding {
+    padding-bottom: 24px;
 }
 
 .callisto-images {
@@ -800,6 +781,7 @@ h1.tab-header {
 
 .project-footer {
   text-align: center;
+    padding-bottom: 24px;
 }
 
 .callisto-iteration img {
@@ -809,17 +791,75 @@ h1.tab-header {
 }
 
 .callisto-iteration .learnings {
-  font-weight: 300;
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: 2px;
   color: #2c2663;
 }
 
-.callisto-iteration .learnings li {
-  line-height: 34px;
+.img-container {
+    width: 100%;
+    text-align: center;
 }
 
-.callisto-iteration .first-iteration p {
+.full-width {
+    width: 100%;
+}
+
+.proj-img {
+    padding: 24px;
+}
+
+.proj-img.half {
+    width: 30%;
+    margin: 0 24px;
+    display: inline-block;
+}
+
+.third {
+    width: 30%;
+    padding: 0 12px;
+    margin-bottom: 24px;
+}
+
+.sonova-persona {
+    width: 100%;
+}
+
+.methods-tools {
+    display: flex;
+}
+
+.methods-tools h2 {
+    margin-top: 0;
+}
+
+.inline {
+    flex: 1;
+    color: #866C8F;
+}
+
+.inline ul {
+    padding-left: 20px;
+}
+
+.thumb-up {
+    background-image: url(assets/icons/thumb_up-24px.svg);
+    background-repeat: no-repeat;
+    background-position: 0px 10px;
+    padding-left: 36px;
+    background-size: 20px;
+}
+
+.thumb-down {
+    background-image: url(assets/icons/thumb_down-24px.svg);
+    background-repeat: no-repeat;
+    background-position: 0px 10px;
+    padding-left: 36px;
+    background-size: 20px;
+}
+
+.callisto-iteration .learnings {
+  line-height: 34px;
 }
 
 @media screen and (max-width: 500px) {
