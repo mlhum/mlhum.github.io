@@ -450,6 +450,7 @@ h1.tab-header {
 
 .about-container {
   height: calc(75vh - 100px);
+    min-height: 480px;
 }
 
 .about-container .about {
