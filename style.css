@@ -610,6 +610,7 @@ h1.tab-header {
   transition: 0.3s ease;
   line-height: 1;
   padding: 8px 0;
+    text-transform: uppercase;
 }
 
 .project-container .project-date {
