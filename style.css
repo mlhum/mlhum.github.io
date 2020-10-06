@@ -553,6 +553,11 @@ h1.tab-header {
     max-width: 1200px;
 }
 
+.img-container .full-img {
+    width: 100%;
+    padding-bottom: 24px;
+}
+
 .project-container {
   width: 100%;
   min-height: 270px;
