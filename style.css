@@ -52,7 +52,7 @@ h3.passion {
 }
 
 h1 {
-  color: #2c2663;
+  color: #5257A3;
   font-family: "Nunito Sans", sans-serif, Arial, Helvetica, sans-serif;
   font-size: 17px;
   margin: 24px 0 16px;
@@ -103,7 +103,7 @@ a.link:hover {
 p.quote {
   font-style: italic;
   font-size: 21px;
-  color: #2c2663;
+  color: #5257A3;
   font-weight: 600;
   padding: 32px 24px;
 }
@@ -212,7 +212,7 @@ ul.nav.nav-tabs li {
   padding: 6px 0;
   margin: 0 5px;
   display: block;
-  color: #2c2663;
+  color: #5257A3;
   border-bottom: 1px solid transparent;
   text-transform: uppercase;
   font-size: 12px;
@@ -263,7 +263,7 @@ h1.tab-header {
 
 .footer {
     padding: 12px; 
-    background-color: #23395b;
+    background-color: #5257A3;
       font-family: "Nunito Sans", sans-serif, Arial, Helvetica, sans-serif;
 }
 
@@ -320,7 +320,7 @@ h1.tab-header {
 
 .jumbotron-container:hover .jumbotron-caption {
   opacity: 1;
-  color: #2c2663;
+  color: #5257A3;
 }
 
 .jumbotron-container .jumbotron-caption {
@@ -335,7 +335,7 @@ h1.tab-header {
   opacity: 0.8;
   text-transform: uppercase;
   font-family: "Open Sans", sans-serif;
-  -webkit-text-stroke: 1px #2c2663;
+  -webkit-text-stroke: 1px #5257A3;
   z-index: 2;
   top: 40%;
 }
@@ -428,7 +428,7 @@ h1.tab-header {
   .jumbotron-container .jumbotron-caption {
     font-size: 48px;
     font-weight: 800;
-    color: #2c2663;
+    color: #5257A3;
     opacity: 0.8;
     bottom: 40%;
     width: 100%;
@@ -462,7 +462,7 @@ h1.tab-header {
 }
 
 .about h1.about-header {
-  color: #2c2663;
+  color: #5257A3;
     text-align: center;
   font-family: "Open Sans", sans-serif;
   font-size: 34px;
@@ -485,7 +485,7 @@ h1.tab-header {
 
 .button-link {
   border: 2px solid #2c2663;
-  color: #2c2663;
+  color: #5257A3;
   text-transform: uppercase;
   font-weight: 700;
   padding: 10px 12px;
@@ -800,7 +800,7 @@ h1.tab-header {
 .callisto-iteration .learnings {
   font-size: 16px;
   letter-spacing: 2px;
-  color: #2c2663;
+  color: #5257A3;
 }
 
 .img-container {
