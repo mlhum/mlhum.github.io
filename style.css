@@ -302,7 +302,7 @@ h1.tab-header {
 .jumbotron-container {
   min-height: 480px;
   transform: translateY(-95px);
-  height: 100vh;
+  height: 95vh;
   margin: auto;
   overflow: hidden;
   position: relative;
