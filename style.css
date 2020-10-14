@@ -54,8 +54,8 @@ h3.passion {
 h1 {
   color: #5257a3;
   font-family: "Nunito Sans", sans-serif, Arial, Helvetica, sans-serif;
-  font-size: 17px;
-  margin: 24px 0 16px;
+  font-size: 21px;
+  margin: 32px 0 16px;
   text-transform: uppercase;
   font-weight: 800;
   letter-spacing: 2px;
@@ -64,7 +64,7 @@ h1 {
 h2 {
   margin: 16px 0 16px;
   font-size: 17px;
-  color: #826a86;
+  color: #b4adea;
   font-weight: 600;
 }
 
@@ -692,6 +692,39 @@ h1.tab-header {
   margin-bottom: 10px;
 }
 
+.subproject-container {
+  padding: 24px 0;
+  display: flex;
+  align-items: center;
+}
+
+.subproject-container .text-half {
+  width: 45%;
+  padding-right: 24px;
+  display: inline-block;
+}
+
+.subproject-container .img-half {
+  width: 45%;
+  padding-left: 24px;
+  display: inline-block;
+}
+
+@media screen and (max-width: 550px) {
+  .subproject-container {
+    display: block;
+  }
+
+  .subproject-container .text-half {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .subproject-container .img-half {
+    display: none;
+  }
+}
+
 .jumbotron-container:hover .callisto-jumbotron img {
   transform: scale(1);
   transition: 2s cubic-bezier(0.17, 0.897, 0.18, 0.848);
@@ -897,7 +930,7 @@ h1.tab-header {
   display: inline-block;
 }
 
-.` .connect-content a:hover {
+.connect-content a:hover {
   color: #ee383a;
   text-decoration: none;
 }
