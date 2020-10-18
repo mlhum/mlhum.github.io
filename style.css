@@ -3,8 +3,18 @@
 @import url("https://fonts.googleapis.com/css?family=Lobster&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Amarante&display=swap");
 
+@font-face {
+    font-family: ArtifexCFExtraBold;
+    src:url(./assets/fonts/artifex-cf/ArtifexCFExtraBold.otf) format("truetype");
+}
+
 .title {
   transition: 0.4s ease;
+}
+
+.artifex {
+    font-family: ArtifexCFExtraBold;
+    font-size: 72px;
 }
 
 .sub-text {
@@ -53,7 +63,7 @@ h3.passion {
 
 h1 {
   color: #5257a3;
-  font-family: "Nunito Sans", sans-serif, Arial, Helvetica, sans-serif;
+  font-family: "ArtifexCFExtraBold", "Nunito Sans", sans-serif, Arial, Helvetica, sans-serif;
   font-size: 21px;
   margin: 32px 0 16px;
   text-transform: uppercase;
@@ -334,7 +344,7 @@ h1.tab-header {
   margin: auto;
   opacity: 0.8;
   text-transform: uppercase;
-  font-family: "Open Sans", sans-serif;
+  font-family: "ArtifexCFExtraBold", "Open Sans", sans-serif;
   -webkit-text-stroke: 1px #5257a3;
   z-index: 2;
   top: 40%;
@@ -559,6 +569,8 @@ h1.tab-header {
   position: relative;
   background-color: #23395b;
   margin-bottom: 48px;
+    box-shadow: 0px 2px 8px 0px #888888;
+    border-radius: 12px;
 }
 
 .project-info {
